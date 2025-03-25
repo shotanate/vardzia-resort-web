@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -26,7 +27,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang="en">
+    <html lang="ka">
       <body
         className={`${archyedtBold.variable} ${archyedtThin.variable} ${firaGoRegular.variable} font-archyedt-bold antialiased`}
       >
@@ -34,6 +35,8 @@ export default async function RootLayout({
           <Navigation />
 
           {children}
+
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

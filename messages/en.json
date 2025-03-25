@@ -1,6 +1,7 @@
 {
   "common": {
     "bar_and_restaurant": "Bar & Restaurant",
+    "contact": "Contact",
     "hotel": "Hotel",
     "locales": {
       "en": "EN",
