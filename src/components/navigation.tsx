@@ -38,7 +38,9 @@ export const Navigation = () => {
       })}
     >
       <nav className="container flex items-center justify-between py-5">
-        <Image src={logo} alt="Vardzia resort logo" height={70} />
+        <Link href="/">
+          <Image src={logo} alt="Vardzia resort logo" height={70} />
+        </Link>
 
         <div className="flex items-center gap-8">
           {navLinks.map((link) => (

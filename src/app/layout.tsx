@@ -1,3 +1,4 @@
+import { Navigation } from "@/components/navigation";
 import type { Metadata } from "next";
 import { archyedtBold, archyedtThin, firaGoRegular } from "./fonts";
 import "./globals.css";
@@ -17,6 +18,8 @@ export default function RootLayout({
       <body
         className={`${archyedtBold.variable} ${archyedtThin.variable} ${firaGoRegular.variable} font-archyedt-bold antialiased`}
       >
+        <Navigation />
+
         {children}
       </body>
     </html>

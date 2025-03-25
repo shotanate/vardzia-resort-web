@@ -1,12 +1,5 @@
-import { Navigation } from "@/components/navigation";
-import { HeroSection } from "@/components/sections";
+import { Sections } from "@/components/sections";
 
 export default function Home() {
-  return (
-    <div>
-      <Navigation />
-
-      <HeroSection />
-    </div>
-  );
+  return <Sections />;
 }
