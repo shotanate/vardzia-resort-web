@@ -1,5 +1,6 @@
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 
 type Props = {
   image: StaticImageData;
@@ -8,6 +9,8 @@ type Props = {
 };
 
 export const DetailsSection = ({ image, to, title }: Props) => {
+  const t = useTranslations();
+
   return (
     <Link href={to} className="flex-1 h-full">
       <div className="w-full h-full relative flex flex-col items-center justify-center group overflow-hidden">
@@ -26,9 +29,9 @@ export const DetailsSection = ({ image, to, title }: Props) => {
         <p
           className="text-xl text-white z-1 absolute bottom-10 translate-y-full opacity-0
          group-hover:translate-y-0 group-hover:opacity-100
-         transition-all duration-500 ease-out"
+         transition-all duration-150 ease-out hover:text-primary-main uppercase"
         >
-          მეტი
+          {t("common.more")}
         </p>
       </div>
     </Link>

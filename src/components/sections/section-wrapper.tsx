@@ -1,5 +1,6 @@
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 
 type Props = {
   image: StaticImageData;
@@ -9,6 +10,8 @@ type Props = {
 };
 
 export const SectionWrapper = ({ image, to, title, description }: Props) => {
+  const t = useTranslations();
+
   return (
     <Link href={to}>
       <div className="w-screen h-screen flex flex-col items-center justify-center group relative shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]">
@@ -25,9 +28,9 @@ export const SectionWrapper = ({ image, to, title, description }: Props) => {
         <p
           className="text-xl text-white z-1 absolute bottom-10 translate-y-full opacity-0
          group-hover:translate-y-0 group-hover:opacity-100
-         transition-all duration-500 ease-out"
+         transition-all duration-500 ease-out hover:text-primary-main uppercase"
         >
-          მეტი
+          {t("common.more")}
         </p>
       </div>
     </Link>

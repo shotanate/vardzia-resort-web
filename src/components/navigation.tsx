@@ -1,25 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import logo from "@/assets/images/vardzia-resort-logo.png";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 // Navigation links data
 const navLinks = [
-  { href: "/", label: "ოთახები", isBold: true },
-  { href: "/", label: "ბარი & რესტორანი" },
-  { href: "/", label: "სერვისები" },
+  { href: "/", labelKey: "common.rooms" },
+  { href: "/", labelKey: "common.bar_and_restaurant" },
+  { href: "/", labelKey: "common.services" },
 ];
 
-const languages = [
-  { href: "/", label: "EN" },
-  { href: "/", label: "ქა" },
-];
+const languages = ["en", "ka"];
 
 export const Navigation = () => {
+  const t = useTranslations();
+
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -45,11 +46,11 @@ export const Navigation = () => {
         <div className="flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
-              key={link.label}
+              key={link.labelKey}
               href={link.href}
-              className="text-lg transition text-white"
+              className="text-lg transition text-white uppercase"
             >
-              {link.label}
+              {t(link.labelKey)}
             </Link>
           ))}
         </div>
@@ -57,11 +58,12 @@ export const Navigation = () => {
         <div className="flex gap-2">
           {languages.map((lang) => (
             <Link
-              key={lang.label}
-              href={lang.href}
+              key={lang}
+              href={pathname}
+              locale={lang}
               className="text-lg transition text-white"
             >
-              {lang.label}
+              {t(`common.locales.${lang}`)}
             </Link>
           ))}
         </div>

@@ -7,7 +7,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        main: "#92264a",
+        primary: {
+          main: "#92264a",
+        },
       },
       container: {
         center: true,
