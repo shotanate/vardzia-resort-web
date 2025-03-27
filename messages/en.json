@@ -1,6 +1,25 @@
 {
+  "bar_restaurant": {
+    "BAR_RESTAURANT": {
+      "description": "Classic bar offers diverse drinks, including craft beers, local best Chachas and wide selection of wines. Good vibes and classy atmosphere will make your leisure time pleasant and comfortable. On Friday evenings you can enjoy Jazz events in the bar. Talented young musicians, high quality music and perfect ambiance will ensure fun nights here.",
+      "title": "Bar & Restaurant"
+    },
+    "DINNING_ROOM": {
+      "description": "Melograno offers wide choice of delicious fresh & local food, inspired by Georgian and Italian cuisine. Sophisticated setting and cozy atmosphere is perfect for business lunch as well as get-together with friends and family. The menu features authentic Georgian cuisine with classic recipes and some of the best Italian dishes. Everything here is fresh made and handmade, prepared by masters of taste. Together with well-known, traditional Georgian food you can try signature dishes like Chakhaluli (beaf meat and potato with wine sauce) a chicken with pomegranate Baje, Khachapuri with special recipe etc. If you are in a mood of more classic European dinner/lunch, there are good options too. You will enjoy classic Italian cuisine with homemade fresh Ravioli and pasta, Pizza, grilled fish, charcoal grilled Rib-eye and many more. Restaurant is vegetarian/vegan-friendly with diverse Georgian and Italian veggie specials. High class service, outstanding food and great variety of Georgian wine will certainly make you want come back again.",
+      "title": "Hotel Dinery"
+    },
+    "LOUNGE": {
+      "description": "Our green lounge bar will be interesting discovery for making small meeting with your colleagues and partners .",
+      "title": "Lounge Bar"
+    },
+    "TERRACE": {
+      "description": "When weather is good, guests can enjoy a beautiful terrace outside the restaurant. Colorful, decorative flowers and wooden details makes this place very special and warm, where you can have a rest, drink something and escape from noise of the city in the very center of it.",
+      "title": "Teracce"
+    }
+  },
   "common": {
     "bar_and_restaurant": "Bar & Restaurant",
+    "book_now": "Book Now",
     "contact": "Contact",
     "hotel": "Hotel",
     "locales": {
@@ -11,8 +30,7 @@
     "more": "Read More",
     "rooms": "Rooms",
     "services": "Services",
-    "wine_shop": "Wine Shop",
-    "book_now": "Book Now"
+    "wine_shop": "Wine Shop"
   },
   "home": {
     "about": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation offers karaoke and luggage storage space.",

@@ -10,6 +10,7 @@ type Props = {
   typeAlias: string;
   imagesLen: number;
   translationKey: string;
+  folderName: string;
 };
 
 export const DetailsView = ({
@@ -17,20 +18,15 @@ export const DetailsView = ({
   typeAlias,
   imagesLen,
   translationKey,
+  folderName,
 }: Props) => {
   const t = useTranslations();
 
   return (
     <div className="flex bg-white border-0">
       <div className="w-1/2">
-        {/* <GalleryCarousel
-          folderName="rooms"
-          imagesLen={imagesLen}
-          typeAlias={typeAlias}
-        /> */}
-
         <GalleryCarousel
-          folderName="rooms"
+          folderName={folderName}
           imagesLen={imagesLen}
           typeAlias={typeAlias}
         />
@@ -42,18 +38,22 @@ export const DetailsView = ({
           </h2>
           <div className="w-8 h-[1px] bg-black"></div>
 
-          <pre className="font-firago-regular my-5 text-wrap">
+          <pre className="font-firago-regular mt-5 mb-8 text-wrap">
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
 
           <Link href="/" target="_blank">
-            <Button variant="ghost" size="lg">
+            <Button variant="ghost" size="lg" className="text-2xl">
               {t("common.book_now")}
             </Button>
           </Link>
         </div>
 
-        <DetailsNavigation aliases={allAliases} currentAlias={typeAlias} />
+        <DetailsNavigation
+          aliases={allAliases}
+          currentAlias={typeAlias}
+          translationKey={translationKey}
+        />
       </div>
     </div>
   );

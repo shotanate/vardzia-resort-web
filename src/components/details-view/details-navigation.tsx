@@ -32,9 +32,14 @@ const DetailsNavigationButton = ({
 type Props = {
   aliases: string[];
   currentAlias: string;
+  translationKey: string;
 };
 
-export const DetailsNavigation = ({ aliases, currentAlias }: Props) => {
+export const DetailsNavigation = ({
+  aliases,
+  currentAlias,
+  translationKey,
+}: Props) => {
   const t = useTranslations();
 
   const pathname = usePathname();
@@ -54,14 +59,14 @@ export const DetailsNavigation = ({ aliases, currentAlias }: Props) => {
     >
       {prevAlias && (
         <DetailsNavigationButton
-          aliasText={t(`room_types.${prevAlias}.title`)}
+          aliasText={t(`${translationKey}.${prevAlias}.title`)}
           to={`/${basePathname}/${prevAlias}`}
         />
       )}
 
       {nextAlias && (
         <DetailsNavigationButton
-          aliasText={t(`room_types.${nextAlias}.title`)}
+          aliasText={t(`${translationKey}.${nextAlias}.title`)}
           to={`/${basePathname}/${nextAlias}`}
           dir="right"
         />

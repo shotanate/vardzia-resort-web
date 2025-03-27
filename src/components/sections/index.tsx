@@ -36,11 +36,11 @@ export const Sections = () => {
 
       <div className="flex items-center justify-center w-screen h-screen">
         <DetailsSection
-          image={conferenceRoom}
+          image={conferenceRoom.src}
           title={t("common.meeting_room")}
           to="/"
         />
-        <DetailsSection image={wine} title={t("common.wine_shop")} to="/" />
+        <DetailsSection image={wine.src} title={t("common.wine_shop")} to="/" />
       </div>
     </>
   );
