@@ -124,7 +124,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    scroll-behavior: smooth;
   }
 }
 
@@ -138,4 +137,26 @@
 
 .regular-text {
   font-family: var(--font-firago-regular);
+}
+
+.details-section::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.f-carousel__dots {
+  bottom: 20px !important;
+}
+
+.f-carousel__dot {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: white !important;
 }

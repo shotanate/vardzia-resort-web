@@ -5,17 +5,44 @@
     "hotel": "Hotel",
     "locales": {
       "en": "EN",
-      "ka": "GE"
+      "ka": "ქა"
     },
     "meeting_room": "Meeting Room",
     "more": "Read More",
     "rooms": "Rooms",
     "services": "Services",
-    "wine_shop": "Wine Shop"
+    "wine_shop": "Wine Shop",
+    "book_now": "Book Now"
   },
   "home": {
     "about": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation offers karaoke and luggage storage space.",
     "bar_and_restaurant_description": "Enjoy delicious meals and refreshing drinks at our cozy restaurant and stylish bar — the perfect place to relax and savor every moment.",
     "rooms_description": "All guest rooms come with a flat-screen TV with satellite channels, a kettle, a shower, free toiletries and a wardrobe. At the hotel all rooms are fitted with bed linen and towels."
+  },
+  "room_types": {
+    "COTTAGE": {
+      "description": "Boasting a private entrance, this air-conditioned bungalow includes 1 bedroom and 1 bathroom with a shower and a hairdryer. The bungalow offers soundproof walls, a wardrobe, an electric kettle, heating and a flat-screen TV with satellite channels. The unit has 2 beds.",
+      "title": "Cottage"
+    },
+    "DELUXE": {
+      "description": "This double room's standout feature is the pool with a view. This air-conditioned double room is comprised of a flat-screen TV with satellite channels, a private bathroom as well as a balcony with garden views. The unit has 1 bed.",
+      "title": "Deluxe"
+    },
+    "DELUXE_PLUS": {
+      "description": "The pool with a view is a top feature of this double room. This air-conditioned double room is comprised of a flat-screen TV with satellite channels, a private bathroom as well as a balcony with garden views. \n\n Comfy beds, 8.2 – Based on 82 reviews",
+      "title": "Deluxe Plus"
+    },
+    "FAMILY": {
+      "description": "This family room's special feature is the pool with a view. Providing free toiletries and bathrobes, this family room includes a private bathroom with a shower, a hairdryer and slippers. The spacious air-conditioned family room provides a flat-screen TV with satellite channels, a private entrance, soundproof walls, a minibar as well as garden views. The unit offers 3 beds.",
+      "title": "Family"
+    },
+    "HALF_DELUXE": {
+      "description": "This suite offers a pool with a view. Featuring a private entrance, this air-conditioned suite comprises 1 bedroom and 1 bathroom with a shower and a hairdryer. Boasting a balcony with garden views, this suite also provides soundproof walls and a flat-screen TV with satellite channels. The unit offers 2 beds.",
+      "title": "Half Deluxe"
+    },
+    "STANDARD": {
+      "description": "Featuring free toiletries and bathrobes, this triple room includes a private bathroom with a shower, a hairdryer and slippers. The spacious air-conditioned triple room features a flat-screen TV with satellite channels, a private entrance, soundproof walls, a minibar as well as garden views. The unit has 4 beds.",
+      "title": "Standard"
+    }
   }
 }

@@ -11,9 +11,9 @@ import { useTranslations } from "next-intl";
 
 // Navigation links data
 const navLinks = [
-  { href: "/", labelKey: "common.rooms" },
-  { href: "/", labelKey: "common.bar_and_restaurant" },
-  { href: "/", labelKey: "common.services" },
+  { href: "/rooms", labelKey: "common.rooms" },
+  { href: "/bar-and-restaurant", labelKey: "common.bar_and_restaurant" },
+  { href: "/services", labelKey: "common.services" },
 ];
 
 const languages = ["en", "ka"];
@@ -22,6 +22,9 @@ export const Navigation = () => {
   const t = useTranslations();
 
   const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -39,8 +42,9 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={cn("w-full fixed top-0 transition z-10", {
-        "bg-black": isScrolled,
+      className={cn("w-full h-[110px] top-0 transition z-30", {
+        "bg-black": isScrolled && isHomePage,
+        fixed: isHomePage,
       })}
     >
       <div className="container flex items-center justify-between py-5">
@@ -56,12 +60,21 @@ export const Navigation = () => {
             >
               <Link
                 href={link.href}
-                className="text-lg transition text-white uppercase"
+                className={cn("text-lg transition uppercase", {
+                  "text-white": isHomePage,
+                })}
               >
                 {t(link.labelKey)}
               </Link>
 
-              <div className="w-1.5 h-1.5 rounded-full bg-primary-main invisible group-hover:visible"></div>
+              <div
+                className={cn(
+                  "w-1.5 h-1.5 rounded-full bg-primary-main invisible group-hover:visible",
+                  {
+                    visible: pathname.includes(link.href),
+                  }
+                )}
+              ></div>
             </div>
           ))}
         </div>
@@ -72,18 +85,37 @@ export const Navigation = () => {
               key={lang}
               href={pathname}
               locale={lang}
-              className="text-lg transition duration-300 text-white group-hover:opacity-50 hover:opacity-100 leading-none mt-1"
+              className={cn(
+                "text-lg transition duration-300 group-hover:opacity-50 hover:opacity-100 leading-none mt-1",
+                {
+                  "text-white": isHomePage,
+                }
+              )}
             >
               {t(`common.locales.${lang}`)}
             </Link>
           ))}
 
           <Link href="/" target="_blank">
-            <IconFacebook className="transition duration-300 text-white group-hover:opacity-50 hover:opacity-100" />
+            <IconFacebook
+              className={cn(
+                "transition duration-300 group-hover:opacity-50 hover:opacity-100",
+                {
+                  "text-white": isHomePage,
+                }
+              )}
+            />
           </Link>
 
           <Link href="/" target="_blank">
-            <IconInstagram className="transition duration-300 text-white group-hover:opacity-50 hover:opacity-100" />
+            <IconInstagram
+              className={cn(
+                "transition duration-300 group-hover:opacity-50 hover:opacity-100",
+                {
+                  "text-white": isHomePage,
+                }
+              )}
+            />
           </Link>
         </div>
       </div>
