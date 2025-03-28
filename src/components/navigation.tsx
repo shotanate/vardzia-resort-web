@@ -42,7 +42,7 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={cn("w-full h-[110px] top-0 transition z-30", {
+      className={cn("w-full h-[110px] top-0 transition z-40", {
         "bg-black": isScrolled && isHomePage,
         fixed: isHomePage,
       })}

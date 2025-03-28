@@ -15,7 +15,7 @@ export const roomTypes: Record<RoomType, number> = {
   COTTAGE: 2,
 };
 
-export type BarAndRestaurantTypes =
+type BarAndRestaurantTypes =
   | "BAR_RESTAURANT"
   | "DINNING_ROOM"
   | "TERRACE"
@@ -26,4 +26,17 @@ export const braAndRestaurantTypes: Record<BarAndRestaurantTypes, number> = {
   DINNING_ROOM: 0,
   TERRACE: 0,
   LOUNGE: 0,
+};
+
+type ServiceTypes =
+  | "WINERY"
+  | "POOLS_GYM"
+  | "CONFERENCE_HALLS"
+  | "ENTERTAINMENT";
+
+export const serviceTypes: Record<ServiceTypes, number> = {
+  WINERY: 0,
+  POOLS_GYM: 0,
+  CONFERENCE_HALLS: 0,
+  ENTERTAINMENT: 0,
 };

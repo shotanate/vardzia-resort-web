@@ -62,5 +62,23 @@
       "description": "Featuring free toiletries and bathrobes, this triple room includes a private bathroom with a shower, a hairdryer and slippers. The spacious air-conditioned triple room features a flat-screen TV with satellite channels, a private entrance, soundproof walls, a minibar as well as garden views. The unit has 4 beds.",
       "title": "Standard"
     }
+  },
+  "services": {
+    "WINERY": {
+      "title": "Winery",
+      "description": "A small glass room next to the restaurant leads you to the Wine Shop, where you will find yourself surrounded by hundreds of bottles with diverse trademarks and labels. The shop offers wide selection of natural, homemade wines that are dispatched directly from the producers’ cellars. Introducing up to 100 types of wines from different parts of Georgia, the collection also features some exclusive wines, made from rare and unique grape varieties. The Wine Shop is an exceptional place to taste and buy top quality wines and get familiar with diversity of Georgian vineyards. Hotel guests will get special offers."
+    },
+    "POOLS_GYM": {
+      "title": "Pools & Gym",
+      "description": "Hotel offers a high quality relaxation area with swimming pool and Gym. After a long and busy day you will definitely need this little bit of heaven to ensure pleasant sleep. Or you can just start you day here, to be more refreshed since morning."
+    },
+    "CONFERENCE_HALLS": {
+      "title": "Conference Halls",
+      "description": "A 100 m2 meeting room can accommodate 50 guests and has all the facilities for different kinds of events."
+    },
+    "ENTERTAINMENT": {
+      "title": "Entertainment Center",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta, turpis vitae semper venenatis, lacus risus malesuada ante, quis varius turpis sapien a ipsum."
+    }
   }
 }
