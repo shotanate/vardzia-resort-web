@@ -1,6 +1,5 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-// import { GalleryCarousel } from "../gallery-carousel";
 import { GalleryCarousel } from "../gallery-carousel/index";
 import { Button } from "../ui/button";
 import { DetailsNavigation } from "./details-navigation";
@@ -11,6 +10,7 @@ type Props = {
   imagesLen: number;
   translationKey: string;
   folderName: string;
+  disableButton?: boolean;
 };
 
 export const DetailsView = ({
@@ -19,6 +19,7 @@ export const DetailsView = ({
   imagesLen,
   translationKey,
   folderName,
+  disableButton,
 }: Props) => {
   const t = useTranslations();
 
@@ -42,11 +43,13 @@ export const DetailsView = ({
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
 
-          <Link href="/" target="_blank">
-            <Button variant="ghost" size="lg" className="text-2xl">
-              {t("common.book_now")}
-            </Button>
-          </Link>
+          {!disableButton && (
+            <Link href="/" target="_blank">
+              <Button variant="ghost" size="lg" className="text-2xl">
+                {t("common.book_now")}
+              </Button>
+            </Link>
+          )}
         </div>
 
         <DetailsNavigation

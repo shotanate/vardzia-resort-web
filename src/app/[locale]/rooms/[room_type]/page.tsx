@@ -15,7 +15,7 @@ const RoomDetails = async ({ params }: { params: { room_type: string } }) => {
       imagesLen={imagesLen}
       allAliases={Object.keys(roomTypes)}
       typeAlias={room_type}
-      translationKey="bar_restaurant"
+      translationKey="room_types"
       folderName="rooms"
     />
   );

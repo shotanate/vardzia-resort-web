@@ -1,4 +1,10 @@
 {
+  "about": {
+    "MAIN": {
+      "title": "Hotel",
+      "description": "Located in the heart of Tbilisi, Shota Rustaveli boutique hotel can boast a truly distinctive, unique style and concept. Modern, stylish and exquisite design gives this place a special touch of elegance and feeling of comfort and harmony. Wood-dominated interior and pastel colors creates laid-back atmosphere and makes you feel home away from home. The décor also includes some other raw natural materials like leather, iron and granite that gives an additional grace to the interior design. The hotel is just few steps away from Rustaveli Avenue, but guests can still feel very cozy and comfortable thanks to a quiet street across the avenue. Here you will find all the amenities and pleasures, that boutique hotel can offer. Gourmands will also be very happy here- the hotel’s restaurant, Melograno has one of the best cuisines in the city where you will enjoy various culinary delights. Refined style, enchanting food and highly personalized, top-quality service will make your stay here unforgettable."
+    }
+  },
   "bar_restaurant": {
     "BAR_RESTAURANT": {
       "description": "Classic bar offers diverse drinks, including craft beers, local best Chachas and wide selection of wines. Good vibes and classy atmosphere will make your leisure time pleasant and comfortable. On Friday evenings you can enjoy Jazz events in the bar. Talented young musicians, high quality music and perfect ambiance will ensure fun nights here.",

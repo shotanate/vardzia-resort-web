@@ -1,5 +1,16 @@
+import { DetailsView } from "@/components/details-view";
+
 const AboutUsPage = () => {
-  return <div className="bg-gray-300 w-screen h-screen">About us</div>;
+  return (
+    <DetailsView
+      imagesLen={0}
+      allAliases={[]}
+      typeAlias="MAIN"
+      translationKey="about"
+      folderName="about"
+      disableButton
+    />
+  );
 };
 
 export default AboutUsPage;
