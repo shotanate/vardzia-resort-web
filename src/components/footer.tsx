@@ -1,9 +1,10 @@
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
+import { IconLogoEng, IconLogoGeo } from "@/assets/icons";
 import bookingLogo from "@/assets/images/booking-logo.svg";
-import logo from "@/assets/images/vardzia-resort-logo.png";
+import { useMemo } from "react";
 
 const footerLinks = [
   {
@@ -30,6 +31,12 @@ const footerLinks = [
 
 export const Footer = () => {
   const t = useTranslations();
+  const locale = useLocale();
+
+  const Logo = useMemo(
+    () => (locale === "en" ? IconLogoEng : IconLogoGeo),
+    [locale]
+  );
 
   return (
     <footer className="w-full pt-8 pb-12">
@@ -78,16 +85,14 @@ export const Footer = () => {
           </Link>
 
           <Link href="#">
-            <Image src={logo} alt="Logo" height={50} />
+            <Logo className="w-12 h-12 text-primary-main" />
           </Link>
         </div>
       </div>
 
-      {/* <div className="flex items-center justify-end"> */}
       <p className="container text-right font-firago-regular mt-3">
         © 2019 Shota Rustaveli Botiqute Hotel
       </p>
-      {/* </div> */}
     </footer>
   );
 };

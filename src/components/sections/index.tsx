@@ -37,10 +37,14 @@ export const Sections = () => {
       <div className="flex items-center justify-center w-screen h-screen">
         <DetailsSection
           image={conferenceRoom.src}
-          title={t("common.meeting_room")}
-          to="/"
+          title={t("services.CONFERENCE_HALLS.title")}
+          to="/services/CONFERENCE_HALLS"
         />
-        <DetailsSection image={wine.src} title={t("common.wine_shop")} to="/" />
+        <DetailsSection
+          image={wine.src}
+          title={t("services.WINERY.title")}
+          to="/services/WINERY"
+        />
       </div>
     </>
   );

@@ -1,8 +1,12 @@
 import { Link } from "@/i18n/navigation";
+import { RoomType, roomTypeIds } from "@/utils/data";
 import { useTranslations } from "next-intl";
+import { ReactNode } from "react";
 import { GalleryCarousel } from "../gallery-carousel/index";
 import { Button } from "../ui/button";
 import { DetailsNavigation } from "./details-navigation";
+
+const BOOKING_ROOMS_BASE_URL = process.env.BOOKING_ROOMS_BASE_URL;
 
 type Props = {
   allAliases: string[];
@@ -11,6 +15,7 @@ type Props = {
   translationKey: string;
   folderName: string;
   disableButton?: boolean;
+  additionalContent?: ReactNode;
 };
 
 export const DetailsView = ({
@@ -20,8 +25,11 @@ export const DetailsView = ({
   translationKey,
   folderName,
   disableButton,
+  additionalContent,
 }: Props) => {
   const t = useTranslations();
+
+  const currentRoomId = roomTypeIds[typeAlias as RoomType];
 
   return (
     <div className="flex bg-white border-0">
@@ -44,11 +52,17 @@ export const DetailsView = ({
           </pre>
 
           {!disableButton && (
-            <Link href="/" target="_blank">
+            <Link
+              href={`${BOOKING_ROOMS_BASE_URL}#${currentRoomId}`}
+              target="_blank"
+            >
               <Button variant="ghost" size="lg" className="text-2xl">
                 {t("common.book_now")}
               </Button>
             </Link>
+          )}
+          {additionalContent && (
+            <div className="w-full mt-5">{additionalContent}</div>
           )}
         </div>
 

@@ -1,8 +1,8 @@
 {
   "about": {
     "MAIN": {
-      "title": "Hotel",
-      "description": "Located in the heart of Tbilisi, Shota Rustaveli boutique hotel can boast a truly distinctive, unique style and concept. Modern, stylish and exquisite design gives this place a special touch of elegance and feeling of comfort and harmony. Wood-dominated interior and pastel colors creates laid-back atmosphere and makes you feel home away from home. The décor also includes some other raw natural materials like leather, iron and granite that gives an additional grace to the interior design. The hotel is just few steps away from Rustaveli Avenue, but guests can still feel very cozy and comfortable thanks to a quiet street across the avenue. Here you will find all the amenities and pleasures, that boutique hotel can offer. Gourmands will also be very happy here- the hotel’s restaurant, Melograno has one of the best cuisines in the city where you will enjoy various culinary delights. Refined style, enchanting food and highly personalized, top-quality service will make your stay here unforgettable."
+      "description": "Located in the heart of Tbilisi, Shota Rustaveli boutique hotel can boast a truly distinctive, unique style and concept. Modern, stylish and exquisite design gives this place a special touch of elegance and feeling of comfort and harmony. Wood-dominated interior and pastel colors creates laid-back atmosphere and makes you feel home away from home. The décor also includes some other raw natural materials like leather, iron and granite that gives an additional grace to the interior design. The hotel is just few steps away from Rustaveli Avenue, but guests can still feel very cozy and comfortable thanks to a quiet street across the avenue. Here you will find all the amenities and pleasures, that boutique hotel can offer. Gourmands will also be very happy here- the hotel’s restaurant, Melograno has one of the best cuisines in the city where you will enjoy various culinary delights. Refined style, enchanting food and highly personalized, top-quality service will make your stay here unforgettable.",
+      "title": "Hotel"
     }
   },
   "bar_restaurant": {
@@ -11,7 +11,7 @@
       "title": "Bar & Restaurant"
     },
     "DINNING_ROOM": {
-      "description": "Melograno offers wide choice of delicious fresh & local food, inspired by Georgian and Italian cuisine. Sophisticated setting and cozy atmosphere is perfect for business lunch as well as get-together with friends and family. The menu features authentic Georgian cuisine with classic recipes and some of the best Italian dishes. Everything here is fresh made and handmade, prepared by masters of taste. Together with well-known, traditional Georgian food you can try signature dishes like Chakhaluli (beaf meat and potato with wine sauce) a chicken with pomegranate Baje, Khachapuri with special recipe etc. If you are in a mood of more classic European dinner/lunch, there are good options too. You will enjoy classic Italian cuisine with homemade fresh Ravioli and pasta, Pizza, grilled fish, charcoal grilled Rib-eye and many more. Restaurant is vegetarian/vegan-friendly with diverse Georgian and Italian veggie specials. High class service, outstanding food and great variety of Georgian wine will certainly make you want come back again.",
+      "description": "Melograno offers wide choice of delicious fresh & local food, inspired by Georgian and Italian cuisine. Sophisticated setting and cozy atmosphere is perfect for business lunch as well as get-together with friends and family. The menu features authentic Georgian cuisine with classic recipes and some of the best Italian dishes. Everything here is fresh made and handmade, prepared by masters of taste.",
       "title": "Hotel Dinery"
     },
     "LOUNGE": {
@@ -32,11 +32,9 @@
       "en": "EN",
       "ka": "ქა"
     },
-    "meeting_room": "Meeting Room",
     "more": "Read More",
     "rooms": "Rooms",
-    "services": "Services",
-    "wine_shop": "Wine Shop"
+    "services": "Services"
   },
   "home": {
     "about": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation offers karaoke and luggage storage space.",
@@ -70,21 +68,21 @@
     }
   },
   "services": {
-    "WINERY": {
-      "title": "Winery",
-      "description": "A small glass room next to the restaurant leads you to the Wine Shop, where you will find yourself surrounded by hundreds of bottles with diverse trademarks and labels. The shop offers wide selection of natural, homemade wines that are dispatched directly from the producers’ cellars. Introducing up to 100 types of wines from different parts of Georgia, the collection also features some exclusive wines, made from rare and unique grape varieties. The Wine Shop is an exceptional place to taste and buy top quality wines and get familiar with diversity of Georgian vineyards. Hotel guests will get special offers."
-    },
-    "POOLS_GYM": {
-      "title": "Pools & Gym",
-      "description": "Hotel offers a high quality relaxation area with swimming pool and Gym. After a long and busy day you will definitely need this little bit of heaven to ensure pleasant sleep. Or you can just start you day here, to be more refreshed since morning."
-    },
     "CONFERENCE_HALLS": {
-      "title": "Conference Halls",
-      "description": "A 100 m2 meeting room can accommodate 50 guests and has all the facilities for different kinds of events."
+      "description": "A 100 m2 meeting room can accommodate 50 guests and has all the facilities for different kinds of events.",
+      "title": "Conference Halls"
     },
     "ENTERTAINMENT": {
-      "title": "Entertainment Center",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta, turpis vitae semper venenatis, lacus risus malesuada ante, quis varius turpis sapien a ipsum."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta, turpis vitae semper venenatis, lacus risus malesuada ante, quis varius turpis sapien a ipsum.",
+      "title": "Entertainment Center"
+    },
+    "POOLS_GYM": {
+      "description": "Hotel offers a high quality relaxation area with swimming pool and Gym. After a long and busy day you will definitely need this little bit of heaven to ensure pleasant sleep. Or you can just start you day here, to be more refreshed since morning.",
+      "title": "Pools & Gym"
+    },
+    "WINERY": {
+      "description": "A small glass room next to the restaurant leads you to the Wine Shop, where you will find yourself surrounded by hundreds of bottles with diverse trademarks and labels. The shop offers wide selection of natural, homemade wines that are dispatched directly from the producers’ cellars. Introducing up to 100 types of wines from different parts of Georgia, the collection also features some exclusive wines, made from rare and unique grape varieties. The Wine Shop is an exceptional place to taste and buy top quality wines and get familiar with diversity of Georgian vineyards. Hotel guests will get special offers.",
+      "title": "Winery"
     }
   }
 }

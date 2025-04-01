@@ -1,5 +1,7 @@
+import { IconBarMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
-import { serviceTypes } from "@/utils/data";
+import { FileLink } from "@/components/details-view/file-link";
+import { ServiceTypes, serviceTypes } from "@/utils/data";
 
 const ServiceDetails = async ({
   params,
@@ -12,7 +14,17 @@ const ServiceDetails = async ({
     return null;
   }
 
-  const imagesLen = serviceTypes[service_type as keyof typeof serviceTypes];
+  const imagesLen = serviceTypes[service_type as ServiceTypes];
+
+  let additionalContent;
+
+  switch (service_type as ServiceTypes) {
+    case "WINERY":
+      additionalContent = (
+        <FileLink title="Wine Menu" file="wine-menu.pdf" Icon={IconBarMenu} />
+      );
+      break;
+  }
 
   return (
     <DetailsView
@@ -21,6 +33,8 @@ const ServiceDetails = async ({
       typeAlias={service_type}
       translationKey="services"
       folderName="services"
+      disableButton
+      additionalContent={additionalContent}
     />
   );
 };

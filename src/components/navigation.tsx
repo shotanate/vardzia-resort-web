@@ -1,15 +1,17 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-import { IconFacebook, IconInstagram } from "@/assets/icons";
-import logo from "@/assets/images/vardzia-resort-logo.png";
+import {
+  IconFacebook,
+  IconInstagram,
+  IconLogoEng,
+  IconLogoGeo,
+} from "@/assets/icons";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-// Navigation links data
 const navLinks = [
   { href: "/rooms", labelKey: "common.rooms" },
   { href: "/bar-and-restaurant", labelKey: "common.bar_and_restaurant" },
@@ -20,6 +22,7 @@ const languages = ["en", "ka"];
 
 export const Navigation = () => {
   const t = useTranslations();
+  const locale = useLocale();
 
   const pathname = usePathname();
 
@@ -40,6 +43,11 @@ export const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const Logo = useMemo(
+    () => (locale === "en" ? IconLogoEng : IconLogoGeo),
+    [locale]
+  );
+
   return (
     <nav
       className={cn("w-full h-[110px] top-0 transition z-40", {
@@ -49,7 +57,11 @@ export const Navigation = () => {
     >
       <div className="container flex items-center justify-between py-5">
         <Link href="/">
-          <Image src={logo} alt="Vardzia resort logo" height={70} />
+          <Logo
+            className={cn("h-14 transition text-primary-main", {
+              "text-white": isScrolled && isHomePage,
+            })}
+          />
         </Link>
 
         <div className="flex items-center gap-12 group/menu">
