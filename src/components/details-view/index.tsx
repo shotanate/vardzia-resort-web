@@ -32,15 +32,15 @@ export const DetailsView = ({
   const currentRoomId = roomTypeIds[typeAlias as RoomType];
 
   return (
-    <div className="flex bg-white border-0">
-      <div className="w-1/2">
+    <div className="flex md:flex-row flex-col-reverse bg-white border-0">
+      <div className="md:w-1/2 w-full">
         <GalleryCarousel
           folderName={folderName}
           imagesLen={imagesLen}
           typeAlias={typeAlias}
         />
       </div>
-      <div className="w-1/2 flex-1 flex flex-col items-center p-11">
+      <div className="md:w-1/2 w-full flex-1 flex flex-col items-center p-11">
         <div className="flex flex-col items-center justify-center gap-5 flex-1 px-16">
           <h2 className="text-4xl">
             {t(`${translationKey}.${typeAlias}.title`)}

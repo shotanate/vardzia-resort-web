@@ -14,13 +14,18 @@ export const DetailsSection = ({ image, to, title, className }: Props) => {
   const t = useTranslations();
 
   return (
-    <Link href={to} className={cn("flex-1 h-full", className)}>
-      <div className="w-full h-full relative flex flex-col items-center justify-center group overflow-hidden details-section cursor-pointer">
+    <Link
+      href={to}
+      className={cn("md:flex-1 flex-auto h-full w-full", className)}
+    >
+      <div className="w-full md:h-full h-[600px] relative flex flex-col items-center justify-center group overflow-hidden details-section cursor-pointer">
         <Image
           src={image}
           alt="title"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+          priority={false}
         />
 
         <div className="z-30 flex flex-col items-center justify-center gap-5">

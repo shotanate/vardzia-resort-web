@@ -1,14 +1,12 @@
-"use client";
-
 import { DetailsSection } from "@/components/sections/details-section";
 import { serviceTypes } from "@/utils/data";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-const ServicesPage = () => {
-  const t = useTranslations();
+const ServicesPage = async () => {
+  const t = await getTranslations();
 
   return (
-    <div className="bg-gray-300 w-screen flex flex-wrap h-[calc(100vh-110px)]">
+    <div className="w-screen flex flex-wrap md:h-[calc(100vh-110px)]">
       {Object.keys(serviceTypes).map(async (serviceType) => {
         return (
           <DetailsSection

@@ -1,3 +1,5 @@
+"use client";
+
 import { DetailsSection } from "./details-section";
 import { SectionWrapper } from "./section-wrapper";
 
@@ -34,7 +36,7 @@ export const Sections = () => {
         description={t("home.bar_and_restaurant_description")}
       />
 
-      <div className="flex items-center justify-center w-screen h-screen">
+      <div className="flex flex-col md:flex-row justify-center w-screen h-screen">
         <DetailsSection
           image={conferenceRoom.src}
           title={t("services.CONFERENCE_HALLS.title")}

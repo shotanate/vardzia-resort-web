@@ -40,8 +40,8 @@ export const Footer = () => {
 
   return (
     <footer className="w-full pt-8 pb-12">
-      <div className="container flex items-start justify-between">
-        <div className="flex flex-col items-start gap-3">
+      <div className="container flex flex-col md:flex-row items-start justify-between">
+        <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
           {footerLinks.map((item) => (
             <Link
               key={item.labelKey}
@@ -53,10 +53,10 @@ export const Footer = () => {
           ))}
         </div>
 
-        <div>
+        <div className="w-full md:w-auto flex flex-col items-center md:items-start my-8 md:my-0">
           <p className="mb-5">{t("common.contact")}</p>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 items-center md:items-start">
             <p className="font-firago-regular font-medium">
               შევჩენკოს ქ. №1 0108 თბილისი, საქართველო
             </p>
@@ -76,7 +76,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-start gap-8">
+        <div className="flex items-start justify-center md:justify-end gap-8 w-full md:w-auto">
           <Link
             href="https://www.booking.com/hotel/ge/vardziaresort.en-gb.html?activeTab=main"
             target="_blank"
@@ -90,7 +90,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <p className="container text-right font-firago-regular mt-3">
+      <p className="container text-center md:text-right font-firago-regular mt-3">
         © 2019 Shota Rustaveli Botiqute Hotel
       </p>
     </footer>

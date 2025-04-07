@@ -15,7 +15,12 @@ export const SectionWrapper = ({ image, to, title, description }: Props) => {
   return (
     <Link href={to}>
       <div className="w-screen h-screen flex flex-col items-center justify-center group relative details-section">
-        <Image src={image} alt="Cover" fill className="w-screen h-screen" />
+        <Image
+          src={image}
+          alt="Cover"
+          fill
+          className="w-screen h-screen object-cover object-center"
+        />
 
         <div className="flex flex-col gap-3 items-center z-30">
           <h2 className="text-3xl text-white">{title}</h2>
