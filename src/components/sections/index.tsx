@@ -1,5 +1,3 @@
-"use client";
-
 import { DetailsSection } from "./details-section";
 import { SectionWrapper } from "./section-wrapper";
 
@@ -8,17 +6,17 @@ import conferenceRoom from "@/assets/images/conference-room.jpg";
 import cover from "@/assets/images/hotel.jpg";
 import rooms from "@/assets/images/rooms.jpg";
 import wine from "@/assets/images/wine.jpg";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const Sections = () => {
-  const t = useTranslations();
+export const Sections = async () => {
+  const t = await getTranslations();
 
   return (
     <>
       <SectionWrapper
         image={cover}
         to="/about-us"
-        title={t("common.hotel")}
+        title={t("about.MAIN.title")}
         description={t("home.about")}
       />
 

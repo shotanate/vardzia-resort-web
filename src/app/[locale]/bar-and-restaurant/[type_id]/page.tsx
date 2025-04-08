@@ -2,6 +2,27 @@ import { IconBarMenu, IconMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
 import { FileLink } from "@/components/details-view/file-link";
 import { BarAndRestaurantTypes, braAndRestaurantTypes } from "@/utils/data";
+import { getTranslations } from "next-intl/server";
+
+const Menus = async () => {
+  const t = await getTranslations();
+
+  return (
+    <div className="flex flex-col gap-3">
+      <FileLink title={t("common.menu")} file="menu.pdf" Icon={IconMenu} />
+      <FileLink
+        title={t("common.meskhian_menu")}
+        file="meskhian-menu.jpg"
+        Icon={IconMenu}
+      />
+      <FileLink
+        title={t("common.bar_menu")}
+        file="bar-menu.pdf"
+        Icon={IconBarMenu}
+      />
+    </div>
+  );
+};
 
 const BarAndRestaurantDetails = async ({
   params,
@@ -20,17 +41,10 @@ const BarAndRestaurantDetails = async ({
 
   switch (type_id as BarAndRestaurantTypes) {
     case "BAR_RESTAURANT":
-      additionalContent = (
-        <div className="flex flex-col gap-3">
-          <FileLink title="Menu" file="menu.pdf" Icon={IconMenu} />
-          <FileLink title="Bar Menu" file="bar-menu.pdf" Icon={IconBarMenu} />
-        </div>
-      );
+      additionalContent = <Menus />;
       break;
     case "DINNING_ROOM":
-      additionalContent = (
-        <FileLink title="Menu" file="meskhian-menu.jpg" Icon={IconMenu} />
-      );
+      additionalContent = <Menus />;
       break;
   }
 

@@ -2,12 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import {
-  IconFacebook,
-  IconInstagram,
-  IconLogoEng,
-  IconLogoGeo,
-} from "@/assets/icons";
+import { IconLogoEng, IconLogoGeo } from "@/assets/icons";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
@@ -15,6 +10,7 @@ import { navLinks } from "./_utils";
 import { ChangeLanguage } from "./change-language";
 import { NavigationDrawer } from "./drawer";
 import { NavLink } from "./nav-link";
+import { SocialLinks } from "./social-links";
 
 export const Navigation = () => {
   const locale = useLocale();
@@ -55,7 +51,7 @@ export const Navigation = () => {
 
         <Link href="/">
           <Logo
-            className={cn("h-14 transition text-primary-main", {
+            className={cn("h-14 w-14 transition text-primary-main", {
               "text-white": isScrolled && isHomePage,
             })}
           />
@@ -67,32 +63,12 @@ export const Navigation = () => {
           ))}
         </div>
 
-        <div className="flex gap-2 group items-center">
-          <div className="hidden gap-2 md:flex">
+        <div className="flex gap-2 group items-center ml-5">
+          <div className="hidden gap-2 md:flex items-center">
             <ChangeLanguage />
           </div>
 
-          <Link href="/" target="_blank">
-            <IconFacebook
-              className={cn(
-                "transition duration-300 group-hover:opacity-50 hover:opacity-100",
-                {
-                  "text-white": isHomePage,
-                }
-              )}
-            />
-          </Link>
-
-          <Link href="/" target="_blank">
-            <IconInstagram
-              className={cn(
-                "transition duration-300 group-hover:opacity-50 hover:opacity-100",
-                {
-                  "text-white": isHomePage,
-                }
-              )}
-            />
-          </Link>
+          <SocialLinks isHomePage={isHomePage} />
         </div>
       </div>
     </nav>

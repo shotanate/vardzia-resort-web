@@ -19,7 +19,7 @@ export const NavLink = ({ labelKey, href }: Props) => {
     <div className="flex flex-col items-center group group-hover/menu:opacity-50 hover:opacity-100 transition duration-300">
       <Link
         href={href}
-        className={cn("text-lg transition uppercase", {
+        className={cn("text-lg transition uppercase text-center", {
           "text-white": isHomePage,
         })}
       >

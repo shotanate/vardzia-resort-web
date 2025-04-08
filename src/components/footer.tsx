@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IconLogoEng, IconLogoGeo } from "@/assets/icons";
 import bookingLogo from "@/assets/images/booking-logo.svg";
 import { useMemo } from "react";
+import { SocialLinks } from "./navigation/social-links";
 
 const footerLinks = [
   {
@@ -24,7 +25,7 @@ const footerLinks = [
     to: "/contact",
   },
   {
-    labelKey: "common.hotel",
+    labelKey: "about.MAIN.title",
     to: "/about-us",
   },
 ];
@@ -87,6 +88,8 @@ export const Footer = () => {
           <Link href="#">
             <Logo className="w-12 h-12 text-primary-main" />
           </Link>
+
+          <SocialLinks isHomePage={false} iconClassName="h-8 w-8" />
         </div>
       </div>
 

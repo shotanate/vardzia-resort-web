@@ -1,13 +1,16 @@
-import { IconBarMenu } from "@/assets/icons";
+import { IconBarMenu, IconMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
 import { FileLink } from "@/components/details-view/file-link";
 import { ServiceTypes, serviceTypes } from "@/utils/data";
+import { getTranslations } from "next-intl/server";
 
 const ServiceDetails = async ({
   params,
 }: {
   params: { service_type: string };
 }) => {
+  const t = await getTranslations();
+
   const { service_type } = await params;
 
   if (!service_type) {
@@ -21,7 +24,18 @@ const ServiceDetails = async ({
   switch (service_type as ServiceTypes) {
     case "WINERY":
       additionalContent = (
-        <FileLink title="Wine Menu" file="wine-menu.pdf" Icon={IconBarMenu} />
+        <div className="flex flex-col gap-3">
+          <FileLink
+            title={t("common.wine_menu")}
+            file="wine-menu.pdf"
+            Icon={IconBarMenu}
+          />
+          <FileLink
+            title={t("common.meskhian_menu")}
+            file="meskhian-menu.jpg"
+            Icon={IconMenu}
+          />
+        </div>
       );
       break;
   }
