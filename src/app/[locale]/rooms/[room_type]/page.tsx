@@ -1,5 +1,21 @@
 import { DetailsView } from "@/components/details-view";
 import { roomTypes } from "@/utils/data";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { room_type: string };
+}): Promise<Metadata> => {
+  const t = await getTranslations();
+  const { room_type } = params;
+
+  return {
+    title: t(`room_types.${room_type}.title`),
+    description: t("metadata.rooms"),
+  };
+};
 
 const RoomDetails = async ({ params }: { params: { room_type: string } }) => {
   const { room_type } = await params;

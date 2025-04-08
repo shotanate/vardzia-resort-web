@@ -24,6 +24,7 @@
     }
   },
   "common": {
+    "about_us": "About us",
     "bar_and_restaurant": "Bar & Restaurant",
     "bar_menu": "Bar Menu",
     "book_now": "Book Now",
@@ -44,6 +45,13 @@
     "about": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation offers karaoke and luggage storage space.",
     "bar_and_restaurant_description": "Enjoy delicious meals and refreshing drinks at our cozy restaurant and stylish bar — the perfect place to relax and savor every moment.",
     "rooms_description": "All guest rooms come with a flat-screen TV with satellite channels, a kettle, a shower, free toiletries and a wardrobe. At the hotel all rooms are fitted with bed linen and towels."
+  },
+  "metadata": {
+    "about_us": "About us metadata description",
+    "bar_and_restaurant": "Bar & Restaurant metadata description",
+    "main_description": "Stay at Vardzia Resort — a cozy resort with beautiful views, great food, and unforgettable experiences. Book now!",
+    "rooms": "Rooms metadata description",
+    "services": "Services metadata description"
   },
   "room_types": {
     "COTTAGE": {

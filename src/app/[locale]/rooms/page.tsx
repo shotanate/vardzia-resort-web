@@ -1,6 +1,16 @@
 import { DetailsSection } from "@/components/sections/details-section";
 import { roomTypes } from "@/utils/data";
+import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t("common.rooms"),
+    description: t("metadata.rooms"),
+  };
+};
 
 const RoomsPage = async () => {
   const t = await getTranslations();

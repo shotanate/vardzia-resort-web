@@ -1,6 +1,16 @@
 import { DetailsSection } from "@/components/sections/details-section";
 import { braAndRestaurantTypes } from "@/utils/data";
+import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t("common.bar_and_restaurant"),
+    description: t("metadata.bar_and_restaurant"),
+  };
+};
 
 const BarAndRestaurantPage = async () => {
   const t = await getTranslations();

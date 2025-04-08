@@ -2,6 +2,7 @@ import { IconBarMenu, IconMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
 import { FileLink } from "@/components/details-view/file-link";
 import { BarAndRestaurantTypes, braAndRestaurantTypes } from "@/utils/data";
+import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 const Menus = async () => {
@@ -22,6 +23,20 @@ const Menus = async () => {
       />
     </div>
   );
+};
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { type_id: string };
+}): Promise<Metadata> => {
+  const t = await getTranslations();
+  const { type_id } = params;
+
+  return {
+    title: t(`bar_restaurant.${type_id}.title`),
+    description: t("metadata.bar_and_restaurant"),
+  };
 };
 
 const BarAndRestaurantDetails = async ({

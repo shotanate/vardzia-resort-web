@@ -2,7 +2,22 @@ import { IconBarMenu, IconMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
 import { FileLink } from "@/components/details-view/file-link";
 import { ServiceTypes, serviceTypes } from "@/utils/data";
+import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { service_type: string };
+}): Promise<Metadata> => {
+  const t = await getTranslations();
+  const { service_type } = params;
+
+  return {
+    title: t(`services.${service_type}.title`),
+    description: t("metadata.services"),
+  };
+};
 
 const ServiceDetails = async ({
   params,

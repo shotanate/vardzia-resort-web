@@ -1,16 +1,42 @@
+"use server";
+
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { archyedtBold, archyedtThin, firaGoRegular } from "./fonts";
-import "./globals.css";
+import {
+  archyedtBold,
+  archyedtThin,
+  firaGoRegular,
+} from "../../assets/fonts/fonts";
+import "../styles/globals.css";
 
-export const metadata: Metadata = {
-  title: "Vardzia Resort",
-  description:
-    "Stay at Vardzia Resort — a cozy resort with beautiful views, great food, and unforgettable experiences. Book now!",
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    // TODO update with valid url
+    metadataBase: new URL("http://localhost:3000/en"),
+    keywords: ["Vardzia", "Resort", "Hotel", "Reslax"],
+    title: {
+      absolute: "",
+      default: t("about.MAIN.title"),
+      template: `%s - ${t("about.MAIN.title")}`,
+    },
+    description: t("metadata.main_description"),
+    openGraph: {
+      description: t("metadata.main_description"),
+      images: [], // TODO Add website images,
+      url: "https://google.com",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+  };
 };
 
 export default async function RootLayout({
