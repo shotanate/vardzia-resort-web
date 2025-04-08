@@ -1,3 +1,5 @@
+"use server";
+
 import { IconBarMenu, IconMenu } from "@/assets/icons";
 import { DetailsView } from "@/components/details-view";
 import { FileLink } from "@/components/details-view/file-link";
@@ -28,10 +30,10 @@ const Menus = async () => {
 export const generateMetadata = async ({
   params,
 }: {
-  params: { type_id: string };
+  params: Promise<{ type_id: string }>;
 }): Promise<Metadata> => {
   const t = await getTranslations();
-  const { type_id } = params;
+  const { type_id } = await params;
 
   return {
     title: t(`bar_restaurant.${type_id}.title`),
@@ -42,7 +44,7 @@ export const generateMetadata = async ({
 const BarAndRestaurantDetails = async ({
   params,
 }: {
-  params: { type_id: string };
+  params: Promise<{ type_id: string }>;
 }) => {
   const { type_id } = await params;
 

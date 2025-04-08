@@ -6,10 +6,10 @@ import { getTranslations } from "next-intl/server";
 export const generateMetadata = async ({
   params,
 }: {
-  params: { room_type: string };
+  params: Promise<{ room_type: string }>;
 }): Promise<Metadata> => {
   const t = await getTranslations();
-  const { room_type } = params;
+  const { room_type } = await params;
 
   return {
     title: t(`room_types.${room_type}.title`),
@@ -17,7 +17,11 @@ export const generateMetadata = async ({
   };
 };
 
-const RoomDetails = async ({ params }: { params: { room_type: string } }) => {
+const RoomDetails = async ({
+  params,
+}: {
+  params: Promise<{ room_type: string }>;
+}) => {
   const { room_type } = await params;
 
   if (!room_type) {

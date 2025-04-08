@@ -8,10 +8,10 @@ import { getTranslations } from "next-intl/server";
 export const generateMetadata = async ({
   params,
 }: {
-  params: { service_type: string };
+  params: Promise<{ service_type: string }>;
 }): Promise<Metadata> => {
   const t = await getTranslations();
-  const { service_type } = params;
+  const { service_type } = await params;
 
   return {
     title: t(`services.${service_type}.title`),
@@ -22,7 +22,7 @@ export const generateMetadata = async ({
 const ServiceDetails = async ({
   params,
 }: {
-  params: { service_type: string };
+  params: Promise<{ service_type: string }>;
 }) => {
   const t = await getTranslations();
 
