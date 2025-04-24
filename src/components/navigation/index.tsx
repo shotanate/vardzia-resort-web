@@ -41,34 +41,39 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={cn("w-full h-[110px] top-0 transition z-40", {
-        "bg-black": isScrolled && isHomePage,
+      className={cn("w-full h-[110px] top-0 transition z-40 delay-200", {
+        "bg-white": isScrolled && isHomePage,
         fixed: isHomePage,
       })}
     >
       <div className="container flex items-center justify-between py-5">
-        <NavigationDrawer />
+        <NavigationDrawer isScrolled={isScrolled} />
 
-        <Link href="/">
+        <Link href="/" className="md:w-[134px]">
           <Logo
-            className={cn("h-14 w-14 transition text-primary-main", {
-              "text-white": isScrolled && isHomePage,
+            className={cn("h-14 w-14 transition text-primary-main delay-200", {
+              "text-white": isHomePage && !isScrolled,
             })}
           />
         </Link>
 
         <div className="items-center gap-12 group/menu hidden md:flex mt-2.5">
           {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
+            <NavLink
+              key={link.href}
+              {...link}
+              isScrolled={isScrolled}
+              isHomePage={isHomePage}
+            />
           ))}
         </div>
 
         <div className="flex gap-2 group items-center ml-5">
           <div className="hidden gap-2 md:flex items-center">
-            <ChangeLanguage />
+            <ChangeLanguage isScrolled={isScrolled} />
           </div>
 
-          <SocialLinks isHomePage={isHomePage} />
+          <SocialLinks isHomePage={isHomePage} isScrolled={isScrolled} />
         </div>
       </div>
     </nav>

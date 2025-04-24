@@ -7,21 +7,25 @@ import { useTranslations } from "next-intl";
 type Props = {
   labelKey: string;
   href: string;
+  isScrolled?: boolean;
+  isHomePage?: boolean;
 };
 
-export const NavLink = ({ labelKey, href }: Props) => {
+export const NavLink = ({ labelKey, href, isScrolled, isHomePage }: Props) => {
   const t = useTranslations();
 
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
 
   return (
-    <div className="flex flex-col items-center group group-hover/menu:opacity-50 hover:opacity-100 transition duration-300">
+    <div className="flex flex-col items-center group group-hover/menu:opacity-50 hover:opacity-100">
       <Link
         href={href}
-        className={cn("text-lg transition uppercase text-center", {
-          "text-white": isHomePage,
-        })}
+        className={cn(
+          "text-lg transition uppercase text-center delay-200 text-primary-main",
+          {
+            "text-white": isHomePage && !isScrolled,
+          }
+        )}
       >
         {t(labelKey)}
       </Link>

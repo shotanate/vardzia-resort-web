@@ -16,7 +16,7 @@ export const GalleryCarousel = ({
   const galleryImages = ["cover", ...Array(imagesLen).keys()];
 
   return (
-    <div className="h-[calc(100vh-110px)]">
+    <div className="md:h-full h-[600px]">
       <Gallery
         options={{
           Carousel: {
@@ -30,6 +30,8 @@ export const GalleryCarousel = ({
             infinite: true,
             Autoplay: {
               autoStart: true,
+              showProgress: false,
+              pauseOnHover: false,
             },
             Navigation: false,
           }}

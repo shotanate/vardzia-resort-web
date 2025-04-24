@@ -1,25 +1,25 @@
 {
   "about": {
     "MAIN": {
-      "description": "Located in the heart of Tbilisi, Shota Rustaveli boutique hotel can boast a truly distinctive, unique style and concept. Modern, stylish and exquisite design gives this place a special touch of elegance and feeling of comfort and harmony. Wood-dominated interior and pastel colors creates laid-back atmosphere and makes you feel home away from home. The décor also includes some other raw natural materials like leather, iron and granite that gives an additional grace to the interior design. The hotel is just few steps away from Rustaveli Avenue, but guests can still feel very cozy and comfortable thanks to a quiet street across the avenue. Here you will find all the amenities and pleasures, that boutique hotel can offer. Gourmands will also be very happy here- the hotel’s restaurant, Melograno has one of the best cuisines in the city where you will enjoy various culinary delights. Refined style, enchanting food and highly personalized, top-quality service will make your stay here unforgettable.",
+      "description": "We offer a variety of room types, each of which has an unique layout, comfortable modern furniture, bathroom fitments of Italian origin, cable TV, telephone, WiFi, Internet access.\n\nOur reasonable prices also include breakfast in the room, WiFi and unlimited Internet access. You will enjoy excellent services: shuttle service, car rental, taxi, air and railway tickets, organization of individual and group tours and programs of stay in Vardzia. The friendly and skilled staff will help to solve organizational problems.  Customized service will generate in you a feeling of comfort, that is so necessary in the conditions of a business or leisure trip.",
       "title": "Vardzia Resort"
     }
   },
   "bar_restaurant": {
     "BAR_RESTAURANT": {
-      "description": "Classic bar offers diverse drinks, including craft beers, local best Chachas and wide selection of wines. Good vibes and classy atmosphere will make your leisure time pleasant and comfortable. On Friday evenings you can enjoy Jazz events in the bar. Talented young musicians, high quality music and perfect ambiance will ensure fun nights here.",
+      "description": "National and Meskhetian cuisine\n\nThe restaurant is at your service\n\nSeparately from the hotel situated cozy restaurant of Georgian cuisine, which is available for every traveler-pilgrim  will surprise  with the quality of  food and reasonable prices.\n\nThe uniqueness of our kitchen  is that it also offers local dishes  of  Meskheti cooked on an open fire and mountain spring water. Meals are prepared from organic products grown at local farms. Lovers  of modern drinks, cocktails and pleasant music can relax in the bar.\n\nThe restaurant can accommodate a large number of visitors, who can dine inside the restaurant (130 persons) and on the large terrace (150 persons), enjoying the views of the Vardzia cave city.\n\nRestaurant is open from 11:00 till 23:00.\n\nDelicious, juicy, fragrant, spicy, moderately hot – this is just a small list of epithets that Georgian cuisine can be rewarded.  However, when talking about it for some reason, one immediately imagine “shashlik”  (barbecue), plenty of greenery and a lot of wine. In fact it is  not exactly this way.",
       "title": "Bar & Restaurant"
     },
     "DINNING_ROOM": {
-      "description": "Melograno offers wide choice of delicious fresh & local food, inspired by Georgian and Italian cuisine. Sophisticated setting and cozy atmosphere is perfect for business lunch as well as get-together with friends and family. The menu features authentic Georgian cuisine with classic recipes and some of the best Italian dishes. Everything here is fresh made and handmade, prepared by masters of taste.",
+      "description": "Georgian Cuisine Hits\n\nThe Georgian cuisine is one of the most original cuisines of the world. You can acquaint yourself with the culinary traditions of Georgian cuisine and personally take part in the preparation of national dishes in the Vardzia Resort restaurant.\n\n Thanks to our chefs,  visitors will have a unique opportunity to join in an atmosphere imbued with the Georgian spirit and enjoy the flavors  of herbs and spices used to prepare national dishes of the peoples of  Georgia.",
       "title": "Hotel Dinery"
     },
     "LOUNGE": {
-      "description": "Our green lounge bar will be interesting discovery for making small meeting with your colleagues and partners .",
+      "description": "The best  place for gatherings Lounge Bar\n\nLounge Bar is the unique place for gatherings in a small circle of friends, family vacation or for a big party. If you want to relax in a summer/winter cafe in nature - visit us! Cafe-Bar with a patio and an outdoor terrace always attracts a lot of visitors, and in the summer, its popularity grows  significantly.\n\nIt’s great to escape from the dusty noisy city streets for a while, to find yourself  in the grace of the quiet shady aisles,  to breathe the cool air near waters.  One of the undeniable advantages of cafe in nature is the opportunity to sit at a table on the patio or terrace and enjoy a beautiful landscape. Here you can also prepare by yourself and enjoy your favourite barbecue.",
       "title": "Lounge Bar"
     },
     "TERRACE": {
-      "description": "When weather is good, guests can enjoy a beautiful terrace outside the restaurant. Colorful, decorative flowers and wooden details makes this place very special and warm, where you can have a rest, drink something and escape from noise of the city in the very center of it.",
+      "description": "DESCRIPTION MISSING",
       "title": "Teracce"
     }
   },
@@ -32,7 +32,8 @@
     "hotel": "Hotel",
     "locales": {
       "en": "EN",
-      "ka": "ქა"
+      "ka": "ქა",
+      "ru": "РУ"
     },
     "menu": "Menu",
     "meskhian_menu": "Meskhian Menu",
@@ -43,57 +44,57 @@
   },
   "home": {
     "about": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia. Featuring a restaurant, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodation offers karaoke and luggage storage space.",
-    "bar_and_restaurant_description": "Enjoy delicious meals and refreshing drinks at our cozy restaurant and stylish bar — the perfect place to relax and savor every moment.",
-    "rooms_description": "All guest rooms come with a flat-screen TV with satellite channels, a kettle, a shower, free toiletries and a wardrobe. At the hotel all rooms are fitted with bed linen and towels."
+    "bar_and_restaurant_description": "Separately from the hotel situated cozy restaurant of Georgian cuisine, which is available for every traveler-pilgrim  will surprise  with the quality of  food and reasonable prices.",
+    "rooms_description": "At present our hotel has 27 rooms all with panoramic views. 19 single or double, 3 triple, 2 lux, 2 family, 1 suite. We have discounts for tourist groups, family couples and honeymooners.\n\nThe site presents all categories of rooms, ranging from single rooms to super luxury category. See a detailed description of each room in the appropriate category. The price includes breakfast, high-speed Wi-Fi access to the Internet, bathroom supplies, slippers and bathrobe, SVC charges and all taxes due under the law, registration of foreign citizens."
   },
   "metadata": {
-    "about_us": "About us metadata description",
-    "bar_and_restaurant": "Bar & Restaurant metadata description",
+    "about_us": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia.",
+    "bar_and_restaurant": "Enjoy delicious cuisine and handcrafted cocktails at our hotel’s Bar & Restaurant. Perfect for breakfast, lunch, dinner, or a relaxing evening drink in a cozy, elegant atmosphere.",
     "main_description": "Stay at Vardzia Resort — a cozy resort with beautiful views, great food, and unforgettable experiences. Book now!",
-    "rooms": "Rooms metadata description",
-    "services": "Services metadata description"
+    "rooms": "Relax in our stylish and comfortable hotel rooms with modern amenities. Perfect for solo travelers, couples, and families seeking a peaceful and luxurious stay.",
+    "services": "Discover top services at our hotel: a serene spa, indoor and outdoor pools, a boutique winery, modern conference halls, and a fun-filled entertainment center for all ages."
   },
   "room_types": {
     "COTTAGE": {
-      "description": "Boasting a private entrance, this air-conditioned bungalow includes 1 bedroom and 1 bathroom with a shower and a hairdryer. The bungalow offers soundproof walls, a wardrobe, an electric kettle, heating and a flat-screen TV with satellite channels. The unit has 2 beds.",
-      "title": "Cottage"
+      "description": "DESCRIPTION MISSING",
+      "title": "Cottage rooms"
     },
-    "DELUXE": {
-      "description": "This double room's standout feature is the pool with a view. This air-conditioned double room is comprised of a flat-screen TV with satellite channels, a private bathroom as well as a balcony with garden views. The unit has 1 bed.",
-      "title": "Deluxe"
-    },
-    "DELUXE_PLUS": {
-      "description": "The pool with a view is a top feature of this double room. This air-conditioned double room is comprised of a flat-screen TV with satellite channels, a private bathroom as well as a balcony with garden views. \n\n Comfy beds, 8.2 – Based on 82 reviews",
-      "title": "Deluxe Plus"
+    "DOUBLE": {
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00 \n High season (15 Jun- 15 Sep): 338 gel \n Low Season (15 Sep - 15 Jun): 278 gel ",
+      "title": "Deluxe double / Twin rooms with Balcony"
     },
     "FAMILY": {
-      "description": "This family room's special feature is the pool with a view. Providing free toiletries and bathrobes, this family room includes a private bathroom with a shower, a hairdryer and slippers. The spacious air-conditioned family room provides a flat-screen TV with satellite channels, a private entrance, soundproof walls, a minibar as well as garden views. The unit offers 3 beds.",
+      "description": "Feel at home relaxing in a Family Room with your kids. All Family Rooms have an integral desk for ease of work, free wireless internet access and a comfortable bed which can accommodate two children.\n\nEach Family Room is equipped with 32'' wall-mounted flat screen TV with Free view channels, iron and ironing board, luxury bathroom toiletries, linen bathrobe, mineral water, newspaper, telephone and hairdryer.\n\nPrice for room includes breakfast and VAT. Price for four persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
       "title": "Family"
     },
-    "HALF_DELUXE": {
-      "description": "This suite offers a pool with a view. Featuring a private entrance, this air-conditioned suite comprises 1 bedroom and 1 bathroom with a shower and a hairdryer. Boasting a balcony with garden views, this suite also provides soundproof walls and a flat-screen TV with satellite channels. The unit offers 2 beds.",
-      "title": "Half Deluxe"
+    "JUNIOR_SUITE": {
+      "description": "The JUNIOR SUITE Rooms within Vardzia Resort are really very nice, with large wrap-around balconies/verandas have some of the best views from two directions. Two sets of patio doors open out onto the balconies/verandas where there is an outside table and two comfy chairs and the writing/computer desks inside are mostly positioned so that there is a nice view whilst working. These bright, spacious and cosy rooms are perfect for the long summer months in Vardzia, as well as the most cheerful room you could wish for on the dullest winter day.\n\nJUNIOR SUITE Rooms feature a very comfortable queen sized bed.  Furthermore, every room has a writing/computer desk with high-speed free complimentary Wi-Fi, satellite TV with the usual World channels, a fully-stocked minibar, individual air-conditioning control, a mini-safe, comfy armchair/s, a hairdryer, large wardrobe and mirror. Finally, the bathrooms have a contemporary design of washbasin, shower cubicles & bidets, high-quality towels and are stocked with complimentary toiletries.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
+      "title": "Junior suite"
     },
-    "STANDARD": {
-      "description": "Featuring free toiletries and bathrobes, this triple room includes a private bathroom with a shower, a hairdryer and slippers. The spacious air-conditioned triple room features a flat-screen TV with satellite channels, a private entrance, soundproof walls, a minibar as well as garden views. The unit has 4 beds.",
-      "title": "Standard"
+    "TRIPLE": {
+      "description": "A key feature of almost all  rooms within Vardzia Resort is a balcony/veranda with panoramic views to the hills surrounding Vardzia Resort, as well as over the historic areas of the monastery complex Vardzia. Quality is evident in every room with natural wood furniture, embossed wallpaper, high quality bed linen, high quality carpets and a relaxing pastel colour scheme. Moreover, the rooms are equipped for the maximum comfort of guests, backed up by a full complement of hotel services.\n\nTriple rooms feature a very comfortable single beds. Furthermore, every room has a writing/computer desk with high-speed free complimentary Wi-Fi, satellite TV with the usual World channels, individual air-conditioning control, comfy armchair/s, a hairdryer, large wardrobe and mirror. Finally, the bathrooms have a contemporary design of washbasin, shower cubicles & bidets, high-quality towels and are stocked with complimentary toiletries.\n\nPrice for room includes breakfast and VAT. Price for three persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
+      "title": "Triple"
+    },
+    "TWIN": {
+      "description": "DESCRIPTION MISSING",
+      "title": "Standard double / Twin"
     }
   },
   "services": {
     "CONFERENCE_HALLS": {
-      "description": "A 100 m2 meeting room can accommodate 50 guests and has all the facilities for different kinds of events.",
+      "description": "The conference room  is equipped with the cutting-edge technology. The modern system of video communication and simultaneous translation allows to conduct international forums as well any kind of business meetings in the hall. Stereoscopic projection system allows you to demonstrate films and arrange colourful presentations. The conference room is 90sq.m. and is supposed for 40 participants.\n\nThe modern conference room is a workspace, which ensures a  significant part of the success of a business event. If you need space, silence and involvement of  participants in a business event - our comfortable and well-equipped conference rooms will be the best choice. The advantages of the rental of our conference rooms are: modern equipment for various purposes - projection, sound and multimedia; simultaneous interpretation and electronic voting systems; equipment for video conferencing; Internet access via Wi-Fi.",
       "title": "Conference Halls"
     },
     "ENTERTAINMENT": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta, turpis vitae semper venenatis, lacus risus malesuada ante, quis varius turpis sapien a ipsum.",
+      "description": "Billiards and Various Board Games – Relax with Friends\n\nUnwind from everyday stress and visit our entertainment hall, where you'll find billiards and a variety of board games.\n\nYou can order food and drinks from the restaurant while enjoying your time in the hall.\n\nSpend a pleasant evening in a fun atmosphere with friends, surrounded by fellow enthusiasts of these exciting games.",
       "title": "Entertainment Center"
     },
-    "POOLS_GYM": {
-      "description": "Hotel offers a high quality relaxation area with swimming pool and Gym. After a long and busy day you will definitely need this little bit of heaven to ensure pleasant sleep. Or you can just start you day here, to be more refreshed since morning.",
-      "title": "Pools & Gym"
+    "POOLS_SPA": {
+      "description": "The  swimming pool which walls resemble a fortress is a  special decoration of the hotel complex.  In summer, in Vardzia you can rest not only on the banks of a natural pond or river. The best way to relax  after a hard day is to swim in two pools with the great wievs.\n\nBathe in the swimming pools  with a glass of champagne in your hand and you will  behold  things that attract thousands of tourists. Guests with children will appreciate the small pool located nearby.\n\nWe offer  a Turkish bath and Finnish sauna\n\nThe unusual sequence of steaming makes  hammam a greatest creation, giving you health and good spirits. Due to the low temperature the steam procedure is quite suitable even for children and the elderly, and for those who cannot stand the heat, or who wishes to avoid high temperatures.\n\nVardzia Resort Complex invites everyone to visit its Turkish bath. The fairy atmosphere of the Arabian Nights  created for you and  embodies you in the luxury environment; it will  take  you to the Ancient East, where you will feel as a Padishah in your  own palace  with the latest technology and a variety of entertainment for all tastes. We will unveil the great mystery of hammam for you, discover hidden secrets to give you a lot of pleasure, beauty and spirits!\n\nAs you know, the Finnish sauna has a beneficial effect on the entire body: it has a relaxing effect, helps to lose weight, improves  the skin, removes toxins and kills germs. Thus, visiting Finnish sauna is not just a fad, but a very good habit.\n\nThe best end of your bath procedures will be swimming in the pool or relaxation in the Jacuzzi. Just at this moment, when dousing in cool water you will fill the charm of bath procedures. Your body feels like  floating above the ground, and all the worries and anxieties disappear and you feel heavenly bliss!",
+      "title": "Pools & SPA"
     },
     "WINERY": {
-      "description": "A small glass room next to the restaurant leads you to the Wine Shop, where you will find yourself surrounded by hundreds of bottles with diverse trademarks and labels. The shop offers wide selection of natural, homemade wines that are dispatched directly from the producers’ cellars. Introducing up to 100 types of wines from different parts of Georgia, the collection also features some exclusive wines, made from rare and unique grape varieties. The Wine Shop is an exceptional place to taste and buy top quality wines and get familiar with diversity of Georgian vineyards. Hotel guests will get special offers.",
+      "description": "Wine tasting in our wine cellar\n\nOur wine tasting is focused on wine lovers and anyone who wants to join this culture, to acquire new knowledge and emotions.\n\nYou will learn to understand what is a good wine and to choose right gastronomic combinations. We offer several type of local wines for tasting and appetizers prepared by our chef, that  will help you unleash the true taste of these wines and to appreciate them.\n\nWine for two\n\nFor your romantic evening our sommelier will select the perfect combination of food and drinks. You only need to select one from the options, and enjoy wine, food and festive atmosphere. The evening’s program includes: a bottle of white, red or sparkling wine, creative cuisine from the Apartments brand-chef, sommelier’s  story about the wine and  basic rules of tasting.",
       "title": "Winery"
     }
   }

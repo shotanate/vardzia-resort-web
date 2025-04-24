@@ -5,6 +5,7 @@ import { PropsWithChildren, useEffect, useRef } from "react";
 import { Carousel as NativeCarousel } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/carousel/carousel.css";
 
+import { Autoplay } from "@fancyapps/ui/dist/carousel/carousel.autoplay.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.thumbs.css";
 import { Thumbs } from "@fancyapps/ui/dist/carousel/carousel.thumbs.esm.js";
 
@@ -29,7 +30,10 @@ export const Carousel = (props: PropsWithChildren<Props>) => {
       ...(props.options || {}),
     };
 
-    const instance = new NativeCarousel(container, options, { Thumbs });
+    const instance = new NativeCarousel(container, options, {
+      Thumbs,
+      Autoplay,
+    });
 
     return () => {
       instance.destroy();

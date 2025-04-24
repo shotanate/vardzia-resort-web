@@ -59,20 +59,20 @@ export const Footer = () => {
 
           <div className="flex flex-col gap-3 items-center md:items-start">
             <p className="font-firago-regular font-medium">
-              შევჩენკოს ქ. №1 0108 თბილისი, საქართველო
+              მის.: ახალქალაქის რაიონი, სოფელი გოგაშენი “ჭაჭკარი”
             </p>
             <Link
-              href="tel:+995 322 19 20 21"
+              href="tel:+995 591 321 515"
               className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
             >
-              +995 322 19 20 21
+              +995 591 321 515
             </Link>
 
             <Link
-              href="mailto:requests@shotahotels.com"
+              href="mailto:info@vardziaresort.com"
               className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
             >
-              requests@shotahotels.com
+              info@vardziaresort.com
             </Link>
           </div>
         </div>
@@ -81,20 +81,24 @@ export const Footer = () => {
           <Link
             href="https://www.booking.com/hotel/ge/vardziaresort.en-gb.html?activeTab=main"
             target="_blank"
+            className="w-8 h-8"
           >
-            <Image src={bookingLogo} alt="Booking logo" height={32} />
+            <Image src={bookingLogo} alt="Booking logo" width={32} />
           </Link>
 
           <Link href="#">
             <Logo className="w-12 h-12 text-primary-main" />
           </Link>
 
-          <SocialLinks isHomePage={false} iconClassName="h-8 w-8" />
+          <SocialLinks
+            isHomePage={false}
+            iconClassName="h-8 w-8 md:text-primary-main"
+          />
         </div>
       </div>
 
       <p className="container text-center md:text-right font-firago-regular mt-3">
-        © 2019 Shota Rustaveli Botiqute Hotel
+        © 2025 Vardzia Resort
       </p>
     </footer>
   );

@@ -5,30 +5,35 @@ import { cn } from "@/lib/utils";
 type Props = {
   isHomePage: boolean;
   iconClassName?: string;
+  isScrolled?: boolean;
 };
 
-export const SocialLinks = ({ isHomePage, iconClassName }: Props) => {
+export const SocialLinks = ({
+  isHomePage,
+  iconClassName,
+  isScrolled,
+}: Props) => {
   return (
     <div className="flex gap-2 items-center">
-      <Link href="/" target="_blank">
+      <Link href="https://www.facebook.com/vardziaresort/" target="_blank">
         <IconFacebook
           className={cn(
-            "transition duration-300 group-hover:opacity-50 hover:opacity-100",
+            "transition delay-200 group-hover:opacity-50 hover:opacity-100 text-primary-main",
             iconClassName,
             {
-              "text-white": isHomePage,
+              "text-white": isHomePage && !isScrolled,
             }
           )}
         />
       </Link>
 
-      <Link href="/" target="_blank">
+      <Link href="https://www.instagram.com/vardziaresort/" target="_blank">
         <IconInstagram
           className={cn(
-            "transition duration-300 group-hover:opacity-50 hover:opacity-100",
+            "transition delay-200 group-hover:opacity-50 hover:opacity-100 text-primary-main",
             iconClassName,
             {
-              "text-white": isHomePage,
+              "text-white": isHomePage && !isScrolled,
             }
           )}
         />

@@ -6,13 +6,17 @@ interface BurgerMenuButtonProps {
   isOpen: boolean;
   onToggle: () => void;
   isHomePage: boolean;
+  isScrolled: boolean;
 }
 
 export const BurgerMenuButton = ({
   isOpen,
   onToggle,
   isHomePage,
+  isScrolled,
 }: BurgerMenuButtonProps) => {
+  const isWhite = isHomePage && !isScrolled && !isOpen;
+
   return (
     <div
       onClick={onToggle}
@@ -24,29 +28,29 @@ export const BurgerMenuButton = ({
     >
       <span
         className={cn(
-          "absolute block w-full h-[2px] bg-black rounded-[3px] opacity-100 left-0",
+          "absolute block w-full h-[2px] bg-primary-main rounded-[3px] opacity-100 left-0 delay-200",
           "transition-all duration-250 ease-in-out",
           "origin-left",
           isOpen && "rotate-45 -translate-y-0.5 translate-x-1",
-          isHomePage && "bg-white"
+          isWhite && "bg-white"
         )}
       />
       <span
         className={cn(
-          "absolute block w-full h-[2px] bg-black rounded-[3px] opacity-100 left-0",
+          "absolute block w-full h-[2px] bg-primary-main rounded-[3px] opacity-100 left-0 delay-200",
           "transition-all duration-250 ease-in-out",
           "origin-left top-3",
           isOpen && "w-0 opacity-0",
-          isHomePage && "bg-white"
+          isWhite && "bg-white"
         )}
       />
       <span
         className={cn(
-          "absolute block w-full h-[2px] bg-black rounded-[3px] opacity-100 left-0",
+          "absolute block w-full h-[2px] bg-primary-main rounded-[3px] opacity-100 left-0 delay-200",
           "transition-all duration-250 ease-in-out",
           "origin-left top-6",
           isOpen && "-rotate-45 translate-y-0.5 translate-x-1",
-          isHomePage && "bg-white"
+          isWhite && "bg-white"
         )}
       />
     </div>

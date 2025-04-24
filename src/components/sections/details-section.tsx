@@ -18,7 +18,7 @@ export const DetailsSection = ({ image, to, title, className }: Props) => {
       href={to}
       className={cn("md:flex-1 flex-auto h-full w-full", className)}
     >
-      <div className="w-full md:h-full h-[600px] relative flex flex-col items-center justify-center group overflow-hidden details-section cursor-pointer">
+      <div className="w-full md:h-full h-[600px] relative flex flex-col items-center justify-center group overflow-hidden details-section cursor-pointer p-5">
         <Image
           src={image}
           alt="title"
@@ -29,7 +29,7 @@ export const DetailsSection = ({ image, to, title, className }: Props) => {
         />
 
         <div className="z-30 flex flex-col items-center justify-center gap-5">
-          <h2 className="text-3xl text-white">{title}</h2>
+          <h2 className="text-3xl text-white text-center">{title}</h2>
           <div className="w-6 h-[1px] bg-white"></div>
         </div>
 

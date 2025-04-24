@@ -5,7 +5,11 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { languages } from "./_utils";
 
-export const ChangeLanguage = () => {
+type Props = {
+  isScrolled?: boolean;
+};
+
+export const ChangeLanguage = ({ isScrolled }: Props) => {
   const t = useTranslations();
   const pathname = usePathname();
 
@@ -15,9 +19,9 @@ export const ChangeLanguage = () => {
       href={pathname}
       locale={lang}
       className={cn(
-        "text-lg transition duration-300 group-hover:opacity-50 hover:opacity-100 leading-none mt-1",
+        "text-lg transition delay-200 group-hover:opacity-50 hover:opacity-100 leading-none mt-1 text-primary-main",
         {
-          "text-white": pathname === "/",
+          "text-white": !isScrolled && pathname === "/",
         }
       )}
     >

@@ -1,17 +1,17 @@
 export type RoomType =
-  | "DELUXE_PLUS"
-  | "DELUXE"
-  | "STANDARD"
+  | "TWIN"
+  | "DOUBLE"
+  | "TRIPLE"
   | "FAMILY"
-  | "HALF_DELUXE"
+  | "JUNIOR_SUITE"
   | "COTTAGE";
 
 export const roomTypes: Record<RoomType, number> = {
-  DELUXE_PLUS: 1,
-  DELUXE: 4,
-  STANDARD: 1,
+  TWIN: 1,
+  DOUBLE: 4,
+  TRIPLE: 1,
   FAMILY: 1,
-  HALF_DELUXE: 2,
+  JUNIOR_SUITE: 2,
   COTTAGE: 2,
 };
 
@@ -23,29 +23,29 @@ export type BarAndRestaurantTypes =
 
 export const braAndRestaurantTypes: Record<BarAndRestaurantTypes, number> = {
   BAR_RESTAURANT: 0,
-  DINNING_ROOM: 0,
-  TERRACE: 0,
-  LOUNGE: 0,
+  DINNING_ROOM: 5,
+  TERRACE: 2,
+  LOUNGE: 18,
 };
 
 export type ServiceTypes =
   | "WINERY"
-  | "POOLS_GYM"
+  | "POOLS_SPA"
   | "CONFERENCE_HALLS"
   | "ENTERTAINMENT";
 
 export const serviceTypes: Record<ServiceTypes, number> = {
-  WINERY: 0,
-  POOLS_GYM: 0,
-  CONFERENCE_HALLS: 0,
-  ENTERTAINMENT: 0,
+  WINERY: 6,
+  POOLS_SPA: 3,
+  CONFERENCE_HALLS: 6,
+  ENTERTAINMENT: 6,
 };
 
 export const roomTypeIds: Record<RoomType, string> = {
-  DELUXE_PLUS: "RD160324601",
-  DELUXE: "RD160324602",
-  STANDARD: "RD160324604",
+  TWIN: "RD160324601",
+  DOUBLE: "RD160324602",
+  TRIPLE: "RD160324604",
   FAMILY: "RD160324606",
-  HALF_DELUXE: "RD160324608",
+  JUNIOR_SUITE: "RD160324608",
   COTTAGE: "RD160324610",
 };
