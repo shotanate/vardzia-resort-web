@@ -7,12 +7,12 @@ export type RoomType =
   | "COTTAGE";
 
 export const roomTypes: Record<RoomType, number> = {
-  TWIN: 1,
-  DOUBLE: 4,
-  TRIPLE: 1,
-  FAMILY: 1,
-  JUNIOR_SUITE: 2,
-  COTTAGE: 2,
+  TWIN: 4,
+  DOUBLE: 2,
+  TRIPLE: 2,
+  FAMILY: 4,
+  JUNIOR_SUITE: 4,
+  COTTAGE: 3,
 };
 
 export type BarAndRestaurantTypes =

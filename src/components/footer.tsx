@@ -59,7 +59,7 @@ export const Footer = () => {
 
           <div className="flex flex-col gap-3 items-center md:items-start">
             <p className="font-firago-regular font-medium">
-              მის.: ახალქალაქის რაიონი, სოფელი გოგაშენი “ჭაჭკარი”
+              {t("common.address")}
             </p>
             <Link
               href="tel:+995 591 321 515"

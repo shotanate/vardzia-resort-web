@@ -25,10 +25,12 @@
   },
   "common": {
     "about_us": "About us",
+    "address": "მის.: ახალქალაქის რაიონი, სოფელი გოგაშენი “ჭაჭკარი”",
     "bar_and_restaurant": "Bar & Restaurant",
     "bar_menu": "Bar Menu",
     "book_now": "Book Now",
     "contact": "Contact",
+    "contact_info": "Contact information",
     "hotel": "Hotel",
     "locales": {
       "en": "EN",
@@ -57,10 +59,10 @@
   "room_types": {
     "COTTAGE": {
       "description": "DESCRIPTION MISSING",
-      "title": "Cottage rooms"
+      "title": "Cottage / Ethno Cottage"
     },
     "DOUBLE": {
-      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00 \n High season (15 Jun- 15 Sep): 338 gel \n Low Season (15 Sep - 15 Jun): 278 gel ",
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel ",
       "title": "Deluxe double / Twin rooms with Balcony"
     },
     "FAMILY": {
