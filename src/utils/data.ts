@@ -3,15 +3,15 @@ export type RoomType =
   | "DOUBLE"
   | "TRIPLE"
   | "FAMILY"
-  | "JUNIOR_SUITE"
+  | "SUITE"
   | "COTTAGE";
 
 export const roomTypes: Record<RoomType, number> = {
-  TWIN: 4,
   DOUBLE: 2,
+  TWIN: 4,
   TRIPLE: 2,
   FAMILY: 4,
-  JUNIOR_SUITE: 4,
+  SUITE: 4,
   COTTAGE: 3,
 };
 
@@ -46,6 +46,6 @@ export const roomTypeIds: Record<RoomType, string> = {
   DOUBLE: "RD160324602",
   TRIPLE: "RD160324604",
   FAMILY: "RD160324606",
-  JUNIOR_SUITE: "RD160324608",
+  SUITE: "RD160324608",
   COTTAGE: "RD160324610",
 };

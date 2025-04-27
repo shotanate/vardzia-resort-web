@@ -59,19 +59,19 @@
   "room_types": {
     "COTTAGE": {
       "description": "DESCRIPTION MISSING",
-      "title": "Cottage / Ethno Cottage"
+      "title": "⁠⁠Cottage / Ethno Cottage"
     },
     "DOUBLE": {
       "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel ",
-      "title": "Deluxe double / Twin rooms with Balcony"
+      "title": "⁠⁠Standard Double - Deluxe Double with balcony"
     },
     "FAMILY": {
       "description": "Feel at home relaxing in a Family Room with your kids. All Family Rooms have an integral desk for ease of work, free wireless internet access and a comfortable bed which can accommodate two children.\n\nEach Family Room is equipped with 32'' wall-mounted flat screen TV with Free view channels, iron and ironing board, luxury bathroom toiletries, linen bathrobe, mineral water, newspaper, telephone and hairdryer.\n\nPrice for room includes breakfast and VAT. Price for four persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
-      "title": "Family"
+      "title": "⁠⁠Family with balcony"
     },
-    "JUNIOR_SUITE": {
+    "SUITE": {
       "description": "The JUNIOR SUITE Rooms within Vardzia Resort are really very nice, with large wrap-around balconies/verandas have some of the best views from two directions. Two sets of patio doors open out onto the balconies/verandas where there is an outside table and two comfy chairs and the writing/computer desks inside are mostly positioned so that there is a nice view whilst working. These bright, spacious and cosy rooms are perfect for the long summer months in Vardzia, as well as the most cheerful room you could wish for on the dullest winter day.\n\nJUNIOR SUITE Rooms feature a very comfortable queen sized bed.  Furthermore, every room has a writing/computer desk with high-speed free complimentary Wi-Fi, satellite TV with the usual World channels, a fully-stocked minibar, individual air-conditioning control, a mini-safe, comfy armchair/s, a hairdryer, large wardrobe and mirror. Finally, the bathrooms have a contemporary design of washbasin, shower cubicles & bidets, high-quality towels and are stocked with complimentary toiletries.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
-      "title": "Junior suite"
+      "title": "⁠⁠Suite with balcony / Junior Suite with balcon"
     },
     "TRIPLE": {
       "description": "A key feature of almost all  rooms within Vardzia Resort is a balcony/veranda with panoramic views to the hills surrounding Vardzia Resort, as well as over the historic areas of the monastery complex Vardzia. Quality is evident in every room with natural wood furniture, embossed wallpaper, high quality bed linen, high quality carpets and a relaxing pastel colour scheme. Moreover, the rooms are equipped for the maximum comfort of guests, backed up by a full complement of hotel services.\n\nTriple rooms feature a very comfortable single beds. Furthermore, every room has a writing/computer desk with high-speed free complimentary Wi-Fi, satellite TV with the usual World channels, individual air-conditioning control, comfy armchair/s, a hairdryer, large wardrobe and mirror. Finally, the bathrooms have a contemporary design of washbasin, shower cubicles & bidets, high-quality towels and are stocked with complimentary toiletries.\n\nPrice for room includes breakfast and VAT. Price for three persons. Price for extra bed is 50 GEL, children to 5 years - not charged. Check in - 14:00, Check out - 12:00.",
@@ -79,7 +79,7 @@
     },
     "TWIN": {
       "description": "DESCRIPTION MISSING",
-      "title": "Standard double / Twin"
+      "title": "⁠Standard Twin - Deluxe Twin with balcony"
     }
   },
   "services": {
