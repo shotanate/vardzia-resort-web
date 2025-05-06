@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Carousel } from "../gallery-carousel/carousel";
@@ -7,7 +8,10 @@ export const CarouselSection = () => {
   const galleryImages = ["cover", ...Array(10).keys()];
 
   return (
-    <div className="w-screen h-screen details-section relative flex flex-col items-center justify-center group">
+    <Link
+      href="/about-us"
+      className="w-screen h-screen details-section relative flex flex-col items-center justify-center group"
+    >
       <div className="w-screen h-screen">
         <Carousel
           options={{
@@ -42,9 +46,9 @@ export const CarouselSection = () => {
           {t("about.MAIN.title")}
         </h2>
         <div className="w-6 h-[1px] bg-white"></div>
-        <p className="md:text-2xl text-md text-white text-center max-w-1/2 font-firago-regular">
+        <pre className="md:text-2xl text-md text-white text-center md:max-w-1/2 max-w-full md:px-0 px-8 font-firago-regular text-wrap">
           {t("home.about")}
-        </p>
+        </pre>
       </div>
 
       <p
@@ -54,6 +58,6 @@ export const CarouselSection = () => {
       >
         {t("common.more")}
       </p>
-    </div>
+    </Link>
   );
 };

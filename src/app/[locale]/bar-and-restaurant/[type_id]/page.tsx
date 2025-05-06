@@ -11,7 +11,7 @@ const Menus = async () => {
   const t = await getTranslations();
 
   return (
-    <div className="flex flex-col gap-3">
+    <>
       <FileLink title={t("common.menu")} file="menu.pdf" Icon={IconMenu} />
       <FileLink
         title={t("common.meskhian_menu")}
@@ -23,7 +23,7 @@ const Menus = async () => {
         file="bar-menu.pdf"
         Icon={IconBarMenu}
       />
-    </div>
+    </>
   );
 };
 
@@ -46,6 +46,7 @@ const BarAndRestaurantDetails = async ({
 }: {
   params: Promise<{ type_id: string }>;
 }) => {
+  const t = await getTranslations();
   const { type_id } = await params;
 
   if (!type_id) {
@@ -58,10 +59,23 @@ const BarAndRestaurantDetails = async ({
 
   switch (type_id as BarAndRestaurantTypes) {
     case "BAR_RESTAURANT":
-      additionalContent = <Menus />;
+      additionalContent = (
+        <div className="flex flex-col gap-3">
+          <Menus />
+          <FileLink
+            title={t("common.wine_menu")}
+            file="wine-menu.pdf"
+            Icon={IconBarMenu}
+          />
+        </div>
+      );
       break;
     case "DINNING_ROOM":
-      additionalContent = <Menus />;
+      additionalContent = (
+        <div className="flex flex-col gap-3">
+          <Menus />
+        </div>
+      );
       break;
   }
 

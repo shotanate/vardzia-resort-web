@@ -47,7 +47,7 @@ export const DetailsView = ({
           </h2>
           <div className="w-8 h-[1px] bg-black"></div>
 
-          <pre className="font-firago-regular mt-5 mb-8 text-wrap">
+          <pre className="font-firago-regular mt-5 mb-8 text-wrap w-full">
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
 
