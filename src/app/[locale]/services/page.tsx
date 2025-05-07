@@ -24,7 +24,7 @@ const ServicesPage = async () => {
             image={`/images/services/${serviceType}/cover.jpg`}
             title={t(`services.${serviceType}.title`)}
             to={`services/${serviceType}`}
-            className="h-1/2 min-w-1/2 border"
+            className="h-1/2 min-w-1/3 border"
           />
         );
       })}

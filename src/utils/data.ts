@@ -9,7 +9,7 @@ export type RoomType =
 export const roomTypes: Record<RoomType, number> = {
   DOUBLE: 2,
   TWIN: 4,
-  TRIPLE: 2,
+  TRIPLE: 1,
   FAMILY: 4,
   SUITE: 4,
   COTTAGE: 3,
@@ -22,7 +22,7 @@ export type BarAndRestaurantTypes =
   | "LOUNGE";
 
 export const braAndRestaurantTypes: Record<BarAndRestaurantTypes, number> = {
-  BAR_RESTAURANT: 0,
+  BAR_RESTAURANT: 7,
   DINNING_ROOM: 5,
   TERRACE: 2,
   LOUNGE: 18,
@@ -32,13 +32,17 @@ export type ServiceTypes =
   | "WINERY"
   | "POOLS_SPA"
   | "CONFERENCE_HALLS"
-  | "ENTERTAINMENT";
+  | "ENTERTAINMENT"
+  | "GARDEN"
+  | "EVENTS";
 
 export const serviceTypes: Record<ServiceTypes, number> = {
   WINERY: 6,
-  POOLS_SPA: 3,
+  POOLS_SPA: 10,
   CONFERENCE_HALLS: 6,
   ENTERTAINMENT: 6,
+  GARDEN: 6,
+  EVENTS: 6,
 };
 
 export const roomTypeIds: Record<RoomType, string> = {

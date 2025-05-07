@@ -27,9 +27,9 @@ export const SectionWrapper = ({ image, to, title, description }: Props) => {
       <div className="flex flex-col gap-3 items-center z-30">
         <h2 className="md:text-4xl text-3xl text-white">{title}</h2>
         <div className="w-6 h-[1px] bg-white"></div>
-        <p className="md:text-2xl text-md text-white text-center max-w-1/2 font-firago-regular">
+        <pre className="md:text-2xl text-md text-white text-center md:max-w-1/2 max-w-full md:px-0 px-8 font-firago-regular text-wrap">
           {description}
-        </p>
+        </pre>
       </div>
 
       <p

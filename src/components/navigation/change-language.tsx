@@ -21,7 +21,7 @@ export const ChangeLanguage = ({ isScrolled }: Props) => {
       className={cn(
         "text-lg transition delay-200 group-hover:opacity-50 hover:opacity-100 leading-none mt-1 text-primary-main",
         {
-          "text-white": !isScrolled && pathname === "/",
+          "md:text-white": !isScrolled && pathname === "/",
         }
       )}
     >
