@@ -1,13 +1,9 @@
 import { noto_serif_jp } from "@/assets/fonts";
-import { Link } from "@/i18n/navigation";
-import { RoomType, roomTypeIds } from "@/utils/data";
 import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
 import { GalleryCarousel } from "../gallery-carousel/index";
 import { Button } from "../ui/button";
 import { DetailsNavigation } from "./details-navigation";
-
-const BOOKING_ROOMS_BASE_URL = process.env.BOOKING_ROOMS_BASE_URL;
 
 type Props = {
   allAliases: string[];
@@ -29,8 +25,6 @@ export const DetailsView = ({
   additionalContent,
 }: Props) => {
   const t = useTranslations();
-
-  const currentRoomId = roomTypeIds[typeAlias as RoomType];
 
   return (
     <div className="flex md:flex-row flex-col-reverse bg-white border-0 md:h-[calc(100vh-110px)]">
@@ -55,14 +49,14 @@ export const DetailsView = ({
           </pre>
 
           {!disableButton && (
-            <Link
-              href={`${BOOKING_ROOMS_BASE_URL}#${currentRoomId}`}
-              target="_blank"
+            <Button
+              variant="ghost"
+              size="lg"
+              className="text-xl font-bold"
+              disabled
             >
-              <Button variant="ghost" size="lg" className="text-2xl">
-                {t("common.book_now")}
-              </Button>
-            </Link>
+              {t("common.book_now")}
+            </Button>
           )}
           {additionalContent && (
             <div className="w-full mt-5">{additionalContent}</div>

@@ -22,7 +22,7 @@ const DetailsNavigationButton = ({
       })}
     >
       <IconArrow direction={dir} className="group-hover:text-primary-main" />
-      <p className="text-lg uppercase font-archyedt-thin font-bold mt-0.5 group-hover:text-primary-main">
+      <p className="text-md uppercase mb-0.5 group-hover:text-primary-main">
         {aliasText}
       </p>
     </Link>

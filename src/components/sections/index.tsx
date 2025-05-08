@@ -19,7 +19,7 @@ export const Sections = async () => {
       />
 
       <SectionWrapper
-        image="/images/restaurant/DINNING_ROOM/cover.jpg"
+        image="/images/restaurant/BAR_RESTAURANT/cover.jpg"
         to="/bar-and-restaurant"
         title={t("common.bar_and_restaurant")}
         description={t("home.bar_and_restaurant_description")}

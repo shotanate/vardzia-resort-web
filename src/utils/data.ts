@@ -44,12 +44,3 @@ export const serviceTypes: Record<ServiceTypes, number> = {
   GARDEN: 7,
   EVENTS: 7,
 };
-
-export const roomTypeIds: Record<RoomType, string> = {
-  TWIN: "RD160324601",
-  DOUBLE: "RD160324602",
-  TRIPLE: "RD160324604",
-  FAMILY: "RD160324606",
-  SUITE: "RD160324608",
-  COTTAGE: "RD160324610",
-};
