@@ -58,19 +58,17 @@ export const Footer = () => {
           <p className="mb-5">{t("common.contact")}</p>
 
           <div className="flex flex-col gap-3 items-center md:items-start">
-            <p className="font-firago-regular font-medium">
-              {t("common.address")}
-            </p>
+            <p>{t("common.address")}</p>
             <Link
               href="tel:+995 591 321 515"
-              className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
+              className="hover:text-primary-main transition duration-300 font-medium"
             >
               +995 591 321 515
             </Link>
 
             <Link
               href="mailto:info@vardziaresort.com"
-              className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
+              className="hover:text-primary-main transition duration-300 font-medium"
             >
               info@vardziaresort.com
             </Link>
@@ -97,7 +95,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <p className="container text-center md:text-right font-firago-regular mt-3">
+      <p className="container text-center md:text-right mt-3">
         © 2025 Vardzia Resort
       </p>
     </footer>

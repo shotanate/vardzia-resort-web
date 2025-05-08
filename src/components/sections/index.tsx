@@ -12,7 +12,7 @@ export const Sections = async () => {
       <CarouselSection />
 
       <SectionWrapper
-        image="/images/rooms/TWIN/cover.jpg"
+        image="/images/rooms/cover.jpg"
         to="/rooms"
         title={t("common.rooms")}
         description={t("home.rooms_description")}

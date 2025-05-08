@@ -21,11 +21,6 @@ export default {
           xl: "3rem",
         },
       },
-      fontFamily: {
-        "archyedt-bold": ["var(--font-archyedt-bold)"],
-        "archyedt-thin": ["var(--font-archyedt-thin)"],
-        "firago-regular": ["var(--font-firago-regular)"],
-      },
       keyframes: {
         slideUp: {
           "0%": { transform: "translateY(100%)", opacity: "0" },

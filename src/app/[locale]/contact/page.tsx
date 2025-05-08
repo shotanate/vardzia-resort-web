@@ -16,23 +16,21 @@ const ContactPage = async () => {
         ></iframe>
       </div>
       <div className="md:w-1/2 w-full h-full md:py-5 py-10 flex flex-col items-center justify-center gap-3 p-5">
-        <h2 className="text-4xl font-firago-regular">
-          {t("common.contact_info")}
-        </h2>
+        <h2 className="text-4xl">{t("common.contact_info")}</h2>
 
         <div className="w-8 h-[1px] bg-black my-2"></div>
 
-        <p className="font-firago-regular font-medium">{t("common.address")}</p>
+        <p className=" font-medium">{t("common.address")}</p>
         <Link
           href="tel:+995 591 321 515"
-          className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
+          className="hover:text-primary-main transition duration-300 font-medium"
         >
           +995 591 321 515
         </Link>
 
         <Link
           href="mailto:info@vardziaresort.com"
-          className="hover:text-primary-main transition duration-300 font-firago-regular font-medium"
+          className="hover:text-primary-main transition duration-300 font-medium"
         >
           info@vardziaresort.com
         </Link>

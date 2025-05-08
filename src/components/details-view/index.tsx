@@ -1,3 +1,4 @@
+import { noto_serif_jp } from "@/assets/fonts";
 import { Link } from "@/i18n/navigation";
 import { RoomType, roomTypeIds } from "@/utils/data";
 import { useTranslations } from "next-intl";
@@ -47,7 +48,9 @@ export const DetailsView = ({
           </h2>
           <div className="w-8 h-[1px] bg-black"></div>
 
-          <pre className="font-firago-regular mt-5 mb-8 text-wrap w-full">
+          <pre
+            className={`mt-5 mb-8 text-wrap w-full ${noto_serif_jp.className}`}
+          >
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
 

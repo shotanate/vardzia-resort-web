@@ -22,6 +22,7 @@ export const ChangeLanguage = ({ isScrolled }: Props) => {
         "text-lg transition delay-200 group-hover:opacity-50 hover:opacity-100 leading-none mt-1 text-primary-main",
         {
           "md:text-white": !isScrolled && pathname === "/",
+          "mb-1": lang === "ka",
         }
       )}
     >

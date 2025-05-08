@@ -1,5 +1,6 @@
 "use server";
 
+import { noto_serif_jp } from "@/assets/fonts";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { routing } from "@/i18n/routing";
@@ -7,11 +8,6 @@ import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import {
-  archyedtBold,
-  archyedtThin,
-  firaGoRegular,
-} from "../../assets/fonts/fonts";
 import "../styles/globals.css";
 
 export const generateMetadata = async (): Promise<Metadata> => {
@@ -54,9 +50,7 @@ export default async function RootLayout({
 
   return (
     <html lang="ka">
-      <body
-        className={`${archyedtBold.variable} ${archyedtThin.variable} ${firaGoRegular.variable} font-archyedt-bold antialiased`}
-      >
+      <body className={`${noto_serif_jp.className} antialiased`}>
         <NextIntlClientProvider>
           <Navigation />
 
