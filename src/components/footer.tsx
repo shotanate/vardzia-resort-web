@@ -1,9 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
 
 import { IconLogoEng, IconLogoGeo } from "@/assets/icons";
-import bookingLogo from "@/assets/images/booking-logo.svg";
 import { useMemo } from "react";
 import { SocialLinks } from "./navigation/social-links";
 
@@ -76,15 +74,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex items-start justify-center md:justify-end gap-8 w-full md:w-auto">
-          <Link
-            href="https://www.booking.com/hotel/ge/vardziaresort.en-gb.html?activeTab=main"
-            target="_blank"
-            className="w-8 h-8"
-          >
-            <Image src={bookingLogo} alt="Booking logo" width={32} />
-          </Link>
-
-          <Link href="#">
+          <Link href="/home">
             <Logo className="w-12 h-12 text-primary-main" />
           </Link>
 

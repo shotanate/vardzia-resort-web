@@ -7,7 +7,7 @@
   },
   "bar_restaurant": {
     "BAR_RESTAURANT": {
-      "description": "National and Meskhetian cuisine\n\nThe restaurant is at your service\n\nSeparately from the hotel situated cozy restaurant of Georgian cuisine, which is available for every traveler-pilgrim  will surprise  with the quality of  food and reasonable prices.\n\nThe uniqueness of our kitchen  is that it also offers local dishes  of  Meskheti cooked on an open fire and mountain spring water. Meals are prepared from organic products grown at local farms. Lovers  of modern drinks, cocktails and pleasant music can relax in the bar.\n\nThe restaurant can accommodate a large number of visitors, who can dine inside the restaurant (130 persons) and on the large terrace (150 persons), enjoying the views of the Vardzia cave city.\n\nRestaurant is open from 11:00 till 23:00.\n\nDelicious, juicy, fragrant, spicy, moderately hot – this is just a small list of epithets that Georgian cuisine can be rewarded.  However, when talking about it for some reason, one immediately imagine “shashlik”  (barbecue), plenty of greenery and a lot of wine. In fact it is  not exactly this way.",
+      "description": "National and Meskhetian cuisine\n\nThe restaurant is at your service\n\nSeparately from the hotel situated cozy restaurant of Georgian cuisine, which is available for every traveler-pilgrim  will surprise  with the quality of  food and reasonable prices.\n\nThe uniqueness of our kitchen  is that it also offers local dishes  of  Meskheti cooked on an open fire and mountain spring water. Meals are prepared from organic products grown at local farms. Lovers  of modern drinks, cocktails and pleasant music can relax in the bar.\n\nThe restaurant can accommodate a large number of visitors, who can dine inside the restaurant (130 persons) and on the large terrace (150 persons), enjoying the views of the Vardzia cave city.\n\nRestaurant is open from 11:00 till 23:00.\n\nDelicious, juicy, fragrant, spicy, moderately hot – this is just a small list of epithets that Georgian cuisine can be rewarded.  However, when talking about it for some reason, one immediately imagine “shashlik”  (barbecue), plenty of greenery and a lot of wine. In fact it is  not exactly this way\n\nLounge Bar with Karaoke - 0pen from 14:00 till 02:00",
       "title": "Bar & Restaurant"
     },
     "DINNING_ROOM": {
@@ -31,6 +31,7 @@
     "book_now": "Book Now",
     "contact": "Contact",
     "contact_info": "Contact information",
+    "home": "Home",
     "hotel": "Hotel",
     "locales": {
       "en": "EN",
@@ -62,7 +63,7 @@
       "title": "⁠⁠Cottage / Ethno Cottage"
     },
     "DOUBLE": {
-      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel\n\nRooms size from 20 to 25 sq.m.",
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel\n\nRooms size from 20 to 25 sq.m.",
       "title": "⁠⁠Standard Double - Deluxe Double with balcony"
     },
     "FAMILY": {
@@ -78,7 +79,7 @@
       "title": "Triple"
     },
     "TWIN": {
-      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard. Room area - 30\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel\n\nRooms size from 21 to 26 sq.m.",
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nCheck in - 14:00, Check out - 12:00\nHigh season (15 Jun- 15 Sep): 338 gel\nLow Season (15 Sep - 15 Jun): 278 gel\n\nRooms size from 21 to 26 sq.m.",
       "title": "⁠Standard Twin - Deluxe Twin with balcony"
     }
   },

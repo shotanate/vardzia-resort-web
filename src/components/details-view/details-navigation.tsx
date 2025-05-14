@@ -22,7 +22,7 @@ const DetailsNavigationButton = ({
       })}
     >
       <IconArrow direction={dir} className="group-hover:text-primary-main" />
-      <p className="text-md uppercase mb-0.5 group-hover:text-primary-main">
+      <p className="text-sm uppercase mb-0.5 group-hover:text-primary-main">
         {aliasText}
       </p>
     </Link>
@@ -52,7 +52,7 @@ export const DetailsNavigation = ({
 
   return (
     <div
-      className={cn("flex items-center justify-between w-full", {
+      className={cn("flex items-center justify-between w-full gap-5", {
         "justify-end": !prevAlias,
         "justify-start": !nextAlias,
       })}

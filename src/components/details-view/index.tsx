@@ -37,13 +37,13 @@ export const DetailsView = ({
       </div>
       <div className="md:w-1/2 w-full flex-1 flex flex-col items-center md:p-11 p-5 md:overflow-y-auto">
         <div className="flex flex-col items-center justify-center gap-5 flex-1 mb-5">
-          <h2 className="text-4xl">
+          <h2 className="text-2xl font-medium">
             {t(`${translationKey}.${typeAlias}.title`)}
           </h2>
           <div className="w-8 h-[1px] bg-black"></div>
 
           <pre
-            className={`mt-5 mb-8 text-wrap w-full ${noto_serif_jp.className}`}
+            className={`mt-5 mb-8 text-wrap w-full text-base ${noto_serif_jp.className}`}
           >
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
@@ -52,7 +52,7 @@ export const DetailsView = ({
             <Button
               variant="ghost"
               size="lg"
-              className="text-xl font-bold"
+              className="text-md font-bold"
               disabled
             >
               {t("common.book_now")}

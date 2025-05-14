@@ -1,5 +1,5 @@
-import { Sections } from "@/components/sections";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <Sections />;
+  redirect("/home");
 }

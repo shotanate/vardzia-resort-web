@@ -43,19 +43,19 @@ export const CarouselSection = () => {
       </div>
 
       <div className="flex flex-col gap-3 items-center z-30 absolute">
-        <h2 className="md:text-4xl text-3xl text-white">
+        <h2 className="md:text-3xl text-2xl text-white font-bold">
           {t("about.MAIN.title")}
         </h2>
         <div className="w-6 h-[1px] bg-white"></div>
         <pre
-          className={`md:text-2xl text-md text-white text-center md:max-w-1/2 max-w-full md:px-0 px-8 text-wrap ${noto_serif_jp.className}`}
+          className={`md:text-xl text-md text-white text-center md:max-w-1/2 max-w-full md:px-0 px-8 text-wrap ${noto_serif_jp.className}`}
         >
           {t("home.about")}
         </pre>
       </div>
 
       <p
-        className="text-xl text-white z-30 absolute bottom-10 translate-y-full opacity-0
+        className="text-md font-bold text-white z-30 absolute bottom-10 translate-y-full opacity-0
          group-hover:translate-y-0 group-hover:opacity-100
          transition-all duration-500 ease-out hover:text-primary-main uppercase"
       >

@@ -15,7 +15,7 @@ type Props = {
 export const NavigationDrawer = ({ isScrolled }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
+  const isHomePage = pathname === "/home";
 
   useEffect(() => {
     setIsOpen(false);

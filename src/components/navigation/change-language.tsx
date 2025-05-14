@@ -19,9 +19,9 @@ export const ChangeLanguage = ({ isScrolled }: Props) => {
       href={pathname}
       locale={lang}
       className={cn(
-        "text-lg transition delay-200 group-hover:opacity-50 hover:opacity-100 leading-none mt-1 text-primary-main",
+        "text-md transition delay-200 group-hover:opacity-50 hover:opacity-100 leading-none mt-1 text-primary-main font-bold",
         {
-          "md:text-white": !isScrolled && pathname === "/",
+          "md:text-white": !isScrolled && pathname === "/home",
           "mb-1": lang === "ka",
         }
       )}

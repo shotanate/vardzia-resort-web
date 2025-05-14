@@ -22,7 +22,7 @@ export type BarAndRestaurantTypes =
   | "LOUNGE";
 
 export const braAndRestaurantTypes: Record<BarAndRestaurantTypes, number> = {
-  BAR_RESTAURANT: 8,
+  BAR_RESTAURANT: 10,
   DINNING_ROOM: 5,
   TERRACE: 2,
   LOUNGE: 18,

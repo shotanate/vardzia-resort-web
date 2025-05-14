@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Define all your routes
   const routes = [
     "",
+    "/home",
     "/about-us",
     "/rooms",
     "/bar-and-restaurant",

@@ -34,7 +34,7 @@ export const DetailsSection = ({ image, to, title, className }: Props) => {
         </div>
 
         <p
-          className="text-xl text-white z-30 absolute bottom-10 translate-y-full opacity-0
+          className="text-md font-bold text-white z-30 absolute bottom-10 translate-y-full opacity-0
          group-hover:translate-y-0 group-hover:opacity-100
          transition-all duration-150 ease-out hover:text-primary-main uppercase"
         >

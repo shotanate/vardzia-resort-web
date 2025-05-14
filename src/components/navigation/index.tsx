@@ -17,7 +17,7 @@ export const Navigation = () => {
 
   const pathname = usePathname();
 
-  const isHomePage = pathname === "/";
+  const isHomePage = pathname === "/home";
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -49,7 +49,7 @@ export const Navigation = () => {
       <div className="container flex items-center justify-between py-5">
         <NavigationDrawer isScrolled={isScrolled} />
 
-        <Link href="/" className="md:w-[134px]">
+        <Link href="/home" className="md:w-[134px]">
           <Logo
             className={cn("h-14 w-14 transition text-primary-main delay-200", {
               "text-white": isHomePage && !isScrolled,

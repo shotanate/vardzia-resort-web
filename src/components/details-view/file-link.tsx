@@ -18,7 +18,7 @@ export const FileLink = ({
     >
       <Icon className="h-6 w-6 text-primary-main" />
 
-      <p className="mt-1 text-lg">{title}</p>
+      <p className="mt-1 text-md hover:text-primary-main transition">{title}</p>
     </Link>
   );
 };

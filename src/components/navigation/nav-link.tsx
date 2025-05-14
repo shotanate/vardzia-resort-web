@@ -21,7 +21,7 @@ export const NavLink = ({ labelKey, href, isScrolled, isHomePage }: Props) => {
       <Link
         href={href}
         className={cn(
-          "text-lg transition uppercase text-center delay-200 text-primary-main",
+          "text-md transition uppercase text-center delay-200 text-primary-main font-bold",
           {
             "text-white": isHomePage && !isScrolled,
           }
