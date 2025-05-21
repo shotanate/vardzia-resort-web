@@ -1,8 +1,8 @@
 import { noto_serif_jp } from "@/assets/fonts";
 import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
+import { BookingDialog } from "../booking";
 import { GalleryCarousel } from "../gallery-carousel/index";
-import { Button } from "../ui/button";
 import { DetailsNavigation } from "./details-navigation";
 
 type Props = {
@@ -49,14 +49,15 @@ export const DetailsView = ({
           </pre>
 
           {!disableButton && (
-            <Button
-              variant="ghost"
-              size="lg"
-              className="text-md font-bold"
-              disabled
-            >
-              {t("common.book_now")}
-            </Button>
+            // <Button
+            //   variant="ghost"
+            //   size="lg"
+            //   className="text-md font-bold"
+            //   disabled
+            // >
+            //   {t("common.book_now")}
+            // </Button>
+            <BookingDialog />
           )}
           {additionalContent && (
             <div className="w-full mt-5">{additionalContent}</div>

@@ -53,7 +53,7 @@ export const Footer = () => {
         </div>
 
         <div className="w-full md:w-auto flex flex-col items-center md:items-start my-8 md:my-0">
-          <p className="mb-5">{t("common.contact")}</p>
+          <p className="mb-3">{t("common.contact")}</p>
 
           <div className="flex flex-col gap-3 items-center md:items-start">
             <p>{t("common.address")}</p>
@@ -73,15 +73,15 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-start justify-center md:justify-end gap-8 w-full md:w-auto">
-          <Link href="/home">
-            <Logo className="w-12 h-12 text-primary-main" />
-          </Link>
-
+        <div className="flex items-start justify-center md:justify-end gap-2 w-full md:w-auto">
           <SocialLinks
             isHomePage={false}
-            iconClassName="h-8 w-8 md:text-primary-main"
+            iconClassName="h-12 w-12 md:text-primary-main"
           />
+
+          <Link href="/home" className="mt-1">
+            <Logo className="w-16 h-16 text-primary-main" />
+          </Link>
         </div>
       </div>
 

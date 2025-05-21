@@ -13,7 +13,10 @@ export const GalleryCarousel = ({
   imagesLen,
   typeAlias,
 }: Props) => {
-  const galleryImages = ["cover", ...Array(imagesLen).keys()];
+  const galleryImages = [
+    "cover",
+    ...Array.from({ length: imagesLen }, (_, i) => i),
+  ];
 
   return (
     <div className="md:h-full h-[600px]">

@@ -51,7 +51,7 @@ export const Navigation = () => {
 
         <Link href="/home" className="md:w-[134px]">
           <Logo
-            className={cn("h-14 w-14 transition text-primary-main delay-200", {
+            className={cn("h-16 w-16 transition text-primary-main delay-200", {
               "text-white": isHomePage && !isScrolled,
             })}
           />
