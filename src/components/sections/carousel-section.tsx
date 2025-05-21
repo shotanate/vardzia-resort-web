@@ -6,7 +6,7 @@ import { Carousel } from "../gallery-carousel/carousel";
 
 export const CarouselSection = () => {
   const t = useTranslations();
-  const galleryImages = ["cover", ...Array(14).keys()];
+  const galleryImages = ["cover", ...Array.from({ length: 14 }, (_, i) => i)];
 
   return (
     <Link
