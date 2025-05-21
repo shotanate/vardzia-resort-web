@@ -23,6 +23,20 @@
       "title": "Teracce"
     }
   },
+  "booking": {
+    "dialog_title": "Request room booking",
+    "form": {
+      "comment": "Comment",
+      "email": "Email",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "number_of_guests": "Number of Guests",
+      "phone": "Phone",
+      "stay_period": "Stay period"
+    },
+    "toast_error": "Failed to reserve room",
+    "toast_success": "Booking Inquiry Received"
+  },
   "common": {
     "about_us": "About us",
     "address": "Address: Akhalkalaki District, Village Gogasheni, “Chachkari”",
@@ -42,6 +56,7 @@
     "meskhian_menu": "Meskhian Menu",
     "more": "Read More",
     "rooms": "Rooms",
+    "send": "Send",
     "services": "Services",
     "wine_menu": "Wine Menu"
   },
