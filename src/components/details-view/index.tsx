@@ -48,17 +48,7 @@ export const DetailsView = ({
             {t(`${translationKey}.${typeAlias}.description`)}
           </pre>
 
-          {!disableButton && (
-            // <Button
-            //   variant="ghost"
-            //   size="lg"
-            //   className="text-md font-bold"
-            //   disabled
-            // >
-            //   {t("common.book_now")}
-            // </Button>
-            <BookingDialog />
-          )}
+          {!disableButton && <BookingDialog />}
           {additionalContent && (
             <div className="w-full mt-5">{additionalContent}</div>
           )}

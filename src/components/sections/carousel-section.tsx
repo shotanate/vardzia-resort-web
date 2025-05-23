@@ -3,16 +3,15 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Carousel } from "../gallery-carousel/carousel";
+import { Button } from "../ui/button";
 
 export const CarouselSection = () => {
   const t = useTranslations();
   const galleryImages = ["cover", ...Array.from({ length: 14 }, (_, i) => i)];
 
   return (
-    <Link
-      href="/about-us"
-      className="w-screen h-screen details-section relative flex flex-col items-center justify-center group"
-    >
+    <div className="w-screen h-screen details-section relative flex flex-col items-center justify-center group">
+      <Link href="/about-us" className="absolute inset-0 z-20" />
       <div className="w-screen h-screen">
         <Carousel
           options={{
@@ -52,6 +51,12 @@ export const CarouselSection = () => {
         >
           {t("home.about")}
         </pre>
+
+        <Link href="/rooms" className="z-30 mt-8">
+          <Button className="w-[150px] h-12 font-black bg-primary-main hover:bg-primary-main/90 text-sm">
+            {t("common.book_now")}
+          </Button>
+        </Link>
       </div>
 
       <p
@@ -61,6 +66,6 @@ export const CarouselSection = () => {
       >
         {t("common.more")}
       </p>
-    </Link>
+    </div>
   );
 };
