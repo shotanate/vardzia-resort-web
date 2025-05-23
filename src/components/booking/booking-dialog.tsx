@@ -1,6 +1,7 @@
-"use server";
+"use client";
 
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 import { Button } from "../ui/button";
 import {
   Dialog,
@@ -12,21 +13,33 @@ import {
 } from "../ui/dialog";
 import { BookingForm } from "./booking-form";
 
-export const BookingDialog = async () => {
-  const t = await getTranslations();
+export const BookingDialog = () => {
+  const t = useTranslations();
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <Dialog>
+    <Dialog onOpenChange={(open) => setIsOpen(open)} open={isOpen}>
       <DialogTrigger asChild>
-        <Button variant="ghost" size="lg" className="text-md font-bold">
+        <Button
+          variant="ghost"
+          size="lg"
+          className="text-md font-bold"
+          onClick={() => setIsOpen(true)}
+        >
           {t("common.book_now")}
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="max-h-[98vh] overflow-y-auto">
         <DialogHeader className="border-b pb-3 mb-3">
-          <DialogTitle>{t("booking.dialog_title")}</DialogTitle>
+          <DialogTitle className="font-bold">
+            {t("booking.dialog_title")}
+          </DialogTitle>
         </DialogHeader>
-        <BookingForm />
+        <BookingForm
+          onClose={() => setIsOpen(false)}
+          setIsLoading={setIsLoading}
+        />
         <DialogFooter className="border-t pt-3 mt-3">
           <Button
             type="submit"
@@ -34,6 +47,7 @@ export const BookingDialog = async () => {
             form="booking-form"
             variant="outline"
             className="text-sm font-bold"
+            disabled={isLoading}
           >
             {t("common.send")}
           </Button>

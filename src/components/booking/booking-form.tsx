@@ -36,7 +36,12 @@ const formSchema = z.object({
 
 export type FormValues = z.infer<typeof formSchema>;
 
-export const BookingForm = () => {
+type Props = {
+  onClose: () => void;
+  setIsLoading: (isLoading: boolean) => void;
+};
+
+export const BookingForm = ({ onClose, setIsLoading }: Props) => {
   const t = useTranslations();
   const { room_type } = useParams<{ room_type: string }>();
 
@@ -57,6 +62,7 @@ export const BookingForm = () => {
   });
 
   const onSubmit = async (values: FormValues) => {
+    setIsLoading(true);
     try {
       await send({
         name: `${values.firstName} ${values.lastName}`,
@@ -75,10 +81,12 @@ export const BookingForm = () => {
         comment: values.comment,
       });
       toast.success(t("booking.toast_success"));
+      onClose();
     } catch (error) {
       console.log(error);
       toast.error(t("booking.toast_error"));
     }
+    setIsLoading(false);
   };
 
   return (

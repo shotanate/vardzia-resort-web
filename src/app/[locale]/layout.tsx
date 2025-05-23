@@ -10,6 +10,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import { BookNowButton } from "@/components/book-now-button";
 import "../styles/globals.css";
 
 export const generateMetadata = async (): Promise<Metadata> => {
@@ -59,6 +60,8 @@ export default async function RootLayout({
           {children}
           <Toaster />
           <Footer />
+
+          <BookNowButton />
         </NextIntlClientProvider>
       </body>
     </html>
