@@ -64,6 +64,9 @@ export const confirmationTemplate = `
             <p><strong>Stay Period:</strong> {{startDate}} - {{endDate}}</p>
             <p><strong>Room:</strong> {{room}}</p>
             <p><strong>Special Requests/Comments:</strong> {{comment}}</p>
+            {{#if withBalcony}}
+                <p><strong>With balcony:</strong> {{withBalcony}}</p>
+            {{/if}}
         </div>
         <p>Thank you for your enquiry - our team will reach out shortly. Please note that this is not a booking confirmation. If your requested dates are not available, we will offer you the closest alternatives.</p>
         <div class="footer">
@@ -143,6 +146,9 @@ export const reservationTemplate = `
             <p><strong>Room type:</strong> {{roomType}}</p>
             <p><strong>Room:</strong> {{room}}</p>
             <p><strong>Special Requests/Comments:</strong> {{comment}}</p>
+            {{#if withBalcony}}
+                <p><strong>With balcony:</strong> {{withBalcony}}</p>
+            {{/if}}
         </div>
         <p>Please review details and reach out to the guest with reservation confirmation or alternative dates.</p>
         <div class="footer">

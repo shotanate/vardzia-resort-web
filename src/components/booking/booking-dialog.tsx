@@ -1,5 +1,6 @@
 "use client";
 
+import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "../ui/button";
@@ -49,7 +50,14 @@ export const BookingDialog = () => {
             className="text-sm font-bold"
             disabled={isLoading}
           >
-            {t("common.send")}
+            {isLoading ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                {t("common.sending")}
+              </>
+            ) : (
+              t("common.send")
+            )}
           </Button>
         </DialogFooter>
       </DialogContent>
