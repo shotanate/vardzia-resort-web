@@ -32,7 +32,8 @@
       "last_name": "Last name",
       "number_of_guests": "Number of Guests",
       "phone": "Phone",
-      "stay_period": "Stay period"
+      "stay_period": "Stay period",
+      "with_balcony": "Balcony"
     },
     "toast_error": "Failed to reserve room",
     "toast_success": "Booking Inquiry Received"
@@ -52,11 +53,13 @@
       "ka": "ქა",
       "ru": "РУ"
     },
-    "menu": "Menu",
+    "menu_eng": "Menu (eng)",
+    "menu_geo": "Menu (geo)",
     "meskhian_menu": "Meskhian Menu",
     "more": "Read More",
     "rooms": "Rooms",
     "send": "Send",
+    "sending": "Sending",
     "services": "Services",
     "wine_menu": "Wine Menu"
   },
@@ -78,7 +81,7 @@
       "title": "⁠⁠Cottage / Ethno Cottage"
     },
     "DOUBLE": {
-      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nRooms size from 21 to 26 sq.m.\n\nPrices:\n   - Check in - 14:00, Check out - 12:00\n   - High season (15 Jun- 15 Sep): 350 GEL\n   - Low Season (15 Sep - 15 Jun): 310 GEL",
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nRooms size from 21 to 26 sq.m.\n\nPrices:\n   - Check in - 14:00, Check out - 12:00\n   - High season (15 Jun- 15 Sep): 350 GEL (with balcony: 380 GEL)\n   - Low Season (15 Sep - 15 Jun): 310 GEL (with balcony: 330 GEL)",
       "title": "⁠⁠Standard Double - Deluxe Double with balcony"
     },
     "FAMILY": {
@@ -94,7 +97,7 @@
       "title": "Triple"
     },
     "TWIN": {
-      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nRooms size from 21 to 26 sq.m.\n\nPrices:\n   - Check in - 14:00, Check out - 12:00\n   - High season (15 Jun- 15 Sep): 380 GEL\n   - Low Season (15 Sep - 15 Jun): 330 GEL",
+      "description": "You will be really pleased with the comfort and coziness of this  double room with two separated or one large king-size bed. It creates the optimal environment for accommodation. The room is ideal for relaxing couples, and will charm you with  historic atmosphere and modern comfort. It is equipped with a comfortable metal double bed done with natural satin linen.  It creates an environment for work and leisure. For your convenience the  room features a  LCD TV set and telephone, safe and mini-bar.\n\nThe bathroom is equipped with the modern fitments of Italian origin, shower unit, basic toiletries, hairdryer, bathrobes. The room windows overlook the courtyard.\n\nPrice for room includes breakfast and VAT. Price for two persons. Price for extra bed is 50 GEL, children to 5 years - not charged.\n\nRooms size from 21 to 26 sq.m.\n\nPrices:\n   - Check in - 14:00, Check out - 12:00\n   - High season (15 Jun- 15 Sep): 350 GEL (with balcony: 380 GEL)\n   - Low Season (15 Sep - 15 Jun): 310 GEL (with balcony: 330 GEL)",
       "title": "⁠Standard Twin - Deluxe Twin with balcony"
     }
   },

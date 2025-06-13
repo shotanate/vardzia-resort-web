@@ -9,6 +9,7 @@ import { DateRange } from "react-day-picker";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
+import { Checkbox } from "../ui/checkbox";
 import {
   Form,
   FormControl,
@@ -18,6 +19,7 @@ import {
   FormMessage,
 } from "../ui/form";
 import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
 import { StayPeriodPicker } from "./stay-period-picker";
 
@@ -32,6 +34,7 @@ const formSchema = z.object({
     to: z.date().optional(),
   }),
   comment: z.string().optional(),
+  withBalcony: z.string().optional(),
 });
 
 export type FormValues = z.infer<typeof formSchema>;
@@ -44,6 +47,7 @@ type Props = {
 export const BookingForm = ({ onClose, setIsLoading }: Props) => {
   const t = useTranslations();
   const { room_type } = useParams<{ room_type: string }>();
+  const withBalcony = room_type === "DOUBLE" || room_type === "TWIN";
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -58,6 +62,7 @@ export const BookingForm = ({ onClose, setIsLoading }: Props) => {
         to: new Date(),
       },
       comment: "",
+      withBalcony: withBalcony ? "No" : undefined,
     },
   });
 
@@ -79,6 +84,9 @@ export const BookingForm = ({ onClose, setIsLoading }: Props) => {
         roomType: room_type,
         room: t(`room_types.${room_type}.title`),
         comment: values.comment,
+        ...(values.withBalcony && {
+          withBalcony: values.withBalcony,
+        }),
       });
       toast.success(t("booking.toast_success"));
       onClose();
@@ -192,6 +200,33 @@ export const BookingForm = ({ onClose, setIsLoading }: Props) => {
             </FormItem>
           )}
         />
+
+        {withBalcony && (
+          <FormField
+            control={form.control}
+            name="withBalcony"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("booking.form.comment")}</FormLabel>
+                <FormControl>
+                  <div className="flex items-center gap-3">
+                    <Checkbox
+                      id="terms"
+                      checked={field.value === "Yes"}
+                      onCheckedChange={(checked) =>
+                        field.onChange(checked ? "Yes" : "No")
+                      }
+                    />
+                    <Label htmlFor="terms" className="mb-0">
+                      {t("booking.form.with_balcony")}
+                    </Label>
+                  </div>
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        )}
 
         <FormField
           control={form.control}

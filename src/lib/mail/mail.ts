@@ -52,6 +52,7 @@ export type BookingTemplateArgs = {
   roomType?: string;
   room: string;
   comment?: string;
+  withBalcony?: string;
 };
 
 export const compileReservationTemplate = async (
