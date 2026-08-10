@@ -4,33 +4,39 @@ export type RoomType =
   | "TRIPLE"
   | "FAMILY"
   | "SUITE"
-  | "COTTAGE";
+  | "COTTAGE"
+  | 'PREMIUM_COTTAGE'
 
 export const roomTypes: Record<RoomType, number> = {
   DOUBLE: 2,
   TWIN: 4,
   TRIPLE: 1,
-  FAMILY: 4,
+  FAMILY: 10,
   SUITE: 4,
-  COTTAGE: 5,
+  COTTAGE: 11,
+  PREMIUM_COTTAGE: 6
 };
 
 export type BarAndRestaurantTypes =
   | "BAR_RESTAURANT"
   | "DINNING_ROOM"
   | "TERRACE"
-  | "LOUNGE";
+  | "LOUNGE"
+  | "BISHI_BAR"
 
 export const braAndRestaurantTypes: Record<BarAndRestaurantTypes, number> = {
   BAR_RESTAURANT: 10,
   DINNING_ROOM: 5,
   TERRACE: 2,
-  LOUNGE: 18,
+  LOUNGE: 9,
+  BISHI_BAR: 9,
 };
 
 export type ServiceTypes =
   | "WINERY"
-  | "POOLS_SPA"
+  | "OUTDOOR_POOLS"
+  | "GYM"
+  | "SPA"
   | "CONFERENCE_HALLS"
   | "ENTERTAINMENT"
   | "GARDEN"
@@ -38,9 +44,11 @@ export type ServiceTypes =
 
 export const serviceTypes: Record<ServiceTypes, number> = {
   WINERY: 6,
-  POOLS_SPA: 10,
+  OUTDOOR_POOLS: 10,
+  GYM: 2,
+  SPA: 9,
   CONFERENCE_HALLS: 6,
-  ENTERTAINMENT: 7,
-  GARDEN: 7,
-  EVENTS: 7,
+  ENTERTAINMENT: 8,
+  GARDEN: 17,
+  EVENTS: 12,
 };
