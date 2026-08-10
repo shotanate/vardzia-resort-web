@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 export const CarouselSection = () => {
   const t = useTranslations();
-  const galleryImages = ["cover", ...Array.from({ length: 14 }, (_, i) => i)];
+  const galleryImages = ["cover", ...Array.from({ length: 9 }, (_, i) => i)];
 
   return (
     <div className="w-screen h-screen details-section relative flex flex-col items-center justify-center group">
