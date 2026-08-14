@@ -22,9 +22,9 @@
       "description": "The best  place for gatherings Lounge Bar\n\nLounge Bar is the unique place for gatherings in a small circle of friends, family vacation or for a big party. If you want to relax in a summer/winter cafe in nature - visit us! Cafe-Bar with a patio and an outdoor terrace always attracts a lot of visitors, and in the summer, its popularity grows  significantly.\n\nIt’s great to escape from the dusty noisy city streets for a while, to find yourself  in the grace of the quiet shady aisles,  to breathe the cool air near waters.  One of the undeniable advantages of cafe in nature is the opportunity to sit at a table on the patio or terrace and enjoy a beautiful landscape. Here you can also prepare by yourself and enjoy your favourite barbecue.",
       "title": "Lobby Lounge"
     },
-    "TERRACE": {
-      "description": "The terrace, located in the resort’s garden, opens up to a fairy-tale view of the Vardzia Monastery complex — a historic city carved into the cliffs. It’s a perfect place to relax in comfort and enjoy breathtaking surroundings.",
-      "title": "Terrace"
+    "VIEWS": {
+      "description": "From the resort grounds, you can enjoy beautiful views of the Vardzia Monastery Complex and the Mtkvari River Valley. Here, you can fully unwind, surrounded by the tranquility of nature and the soothing sounds of the Mtkvari River and its surroundings.\n\nThe resort grounds also feature the 9th–10th-century Chapel of Saint Marine, caves discovered on the property, a vineyard, terraces, and artificial pools.",
+      "title": "Views"
     }
   },
   "booking": {
@@ -141,6 +141,10 @@
     "WINERY": {
       "description": "Wine tasting in our wine cellar\n\nOur wine tasting is focused on wine lovers and anyone who wants to join this culture, to acquire new knowledge and emotions.\n\nYou will learn to understand what is a good wine and to choose right gastronomic combinations. We offer several type of local wines for tasting and appetizers prepared by our chef, that  will help you unleash the true taste of these wines and to appreciate them.\n\nWine for two\n\nFor your romantic evening our sommelier will select the perfect combination of food and drinks. You only need to select one from the options, and enjoy wine, food and festive atmosphere. The evening’s program includes: a bottle of white, red or sparkling wine, creative cuisine from the Apartments brand-chef, sommelier’s  story about the wine and  basic rules of tasting.",
       "title": "Winery"
+    },
+    "ROOSTERS": {
+      "description": "During your stay at Vardzia Resort, you’ll find colorful rugs featuring rooster motifs almost everywhere.\n\nDating back to the 1930s–1950s, these rugs are part of Georgia’s textile heritage. Traditionally handmade by women in old Georgian households, each rug stands out through its unique combination of colors, ornaments, and intricate details.\n\nIn Georgian decorative art, the rooster represents courage and strength. Its vibrant colors and diverse designs are what make these rugs truly special.\n\nToday, more than 100 rooster rugs are displayed throughout Vardzia Resort.",
+      "title": "Roosters"
     }
   }
 }
