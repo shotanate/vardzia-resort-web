@@ -5,6 +5,7 @@ export const navLinks = [
   { href: "/rooms", labelKey: "common.rooms" },
   { href: "/bar-and-restaurant", labelKey: "common.bar_and_restaurant" },
   { href: "/services", labelKey: "common.services" },
+  { href: "/family-history", labelKey: "family_history.MAIN.title" },
 ];
 
 export const languages = ["en", "ka"];
