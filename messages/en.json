@@ -57,8 +57,7 @@
       "ka": "ქა",
       "ru": "РУ"
     },
-    "menu_eng": "Menu (eng)",
-    "menu_geo": "Menu (geo)",
+    "menu": "Menu",
     "meskhian_menu": "Meskhian Menu",
     "more": "Read More",
     "rooms": "Rooms",
@@ -66,6 +65,12 @@
     "sending": "Sending",
     "services": "Services",
     "wine_menu": "Wine Menu"
+  },
+  "family_history": {
+    "MAIN": {
+      "description": "The history of VardziaResort began long before 2015, when the resort welcomed its first guests.\n\nThe idea of attracting tourists to Samtskhe-Javakheti was already on the mind of Nikoloz Natenadze in the 1930s and 1940s. A lawyer by profession, public figure, Rustvelologist and restorer, he made a significant contribution to the development and promotion of the Vardzia Monastery Complex.\n\nAt a time when parts of Vardzia’s caves had been turned into livestock shelters by Turkish shepherds, Nikoloz Natenadze laid the foundations for their restoration and preservation.\n\nIn 1936–1937, large-scale restoration works were carried out in Vardzia under his initiative: more than 300 caves were cleared, the Church of the Dormition of the Virgin Mary and its frescoes were restored, and archaeologists discovered a pharmacy dating back to the time of Queen Tamar. He became the first director of the Vardzia Tourist Complex and Museum, both of which he had established, and played a key role in their development.\n\nNikoloz Natenadze’s work extended beyond Vardzia. In 1934, an expedition was organized to study the potential construction of hydroelectric power stations in the Mtkvari River valley. Through his efforts, a water supply system was also built for the village of Gogasheni, which locals still call “Kolia’s Water” to this day.\n\nIt was Nikoloz Natenadze’s dedication to saving the rock-hewn city of Vardzia that inspired his descendants to continue the work he had begun. For them, this meant contributing to the cultural and economic development of Vardzia itself and of the Samtskhe-Javakheti region as a whole.\n\nTo this day, he is remembered as “the man who saved Vardzia.”",
+      "title": "Family History"
+    }
   },
   "home": {
     "about": "'VARDZIA RESORT'  is located in the Javakheti region of  Georgia, 240 kilometers from the capital Tbilisi. The spectacular design of the resort ensures that almost every one of the resort’s 32 rooms and 7 cottage rooms enjoys a view of the Beautiful nature and Vardzia Cave Town\n\nWe invite you to experience breathtaking nature, elegant and contemporary hotel and a unique atmosphere that provides privacy and tranquility.",
@@ -75,6 +80,7 @@
   "metadata": {
     "about_us": "Vardzia Resort has a seasonal outdoor swimming pool, garden, a shared lounge and terrace in Vardzia.",
     "bar_and_restaurant": "Enjoy delicious cuisine and handcrafted cocktails at our hotel’s Bar & Restaurant. Perfect for breakfast, lunch, dinner, or a relaxing evening drink in a cozy, elegant atmosphere.",
+    "family_history": "The history of VardziaResort began long before 2015, when the resort welcomed its first guests.",
     "main_description": "Stay at Vardzia Resort — a cozy resort with beautiful views, great food, and unforgettable experiences. Book now!",
     "rooms": "Relax in our stylish and comfortable hotel rooms with modern amenities. Perfect for solo travelers, couples, and families seeking a peaceful and luxurious stay.",
     "services": "Discover top services at our hotel: a serene spa, indoor and outdoor pools, a boutique winery, modern conference halls, and a fun-filled entertainment center for all ages."
@@ -134,6 +140,10 @@
       "description": "The pools at Vardzia Resort overlook the Mtkvari River Valley. Both pools are designed as infinity pools, offering breathtaking panoramic views of the valley surrounded by mountains. Both pools are fully equipped to meet the needs of our guests and ensure the comfort throughout their stay.",
       "title": "Outdoor Pools"
     },
+    "ROOSTERS": {
+      "description": "During your stay at Vardzia Resort, you’ll find colorful rugs featuring rooster motifs almost everywhere.\n\nDating back to the 1930s–1950s, these rugs are part of Georgia’s textile heritage. Traditionally handmade by women in old Georgian households, each rug stands out through its unique combination of colors, ornaments, and intricate details.\n\nIn Georgian decorative art, the rooster represents courage and strength. Its vibrant colors and diverse designs are what make these rugs truly special.\n\nToday, more than 100 rooster rugs are displayed throughout Vardzia Resort.",
+      "title": "Roosters"
+    },
     "SPA": {
       "description": "After a day of exploring, Vardzia Resort’s spa offers a peaceful space to unwind and recharge. Enjoy our wet and dry saunas, jacuzzi, and cold plunge, thoughtfully combined to create a complete spa experience. ",
       "title": "Spa"
@@ -141,10 +151,6 @@
     "WINERY": {
       "description": "Wine tasting in our wine cellar\n\nOur wine tasting is focused on wine lovers and anyone who wants to join this culture, to acquire new knowledge and emotions.\n\nYou will learn to understand what is a good wine and to choose right gastronomic combinations. We offer several type of local wines for tasting and appetizers prepared by our chef, that  will help you unleash the true taste of these wines and to appreciate them.\n\nWine for two\n\nFor your romantic evening our sommelier will select the perfect combination of food and drinks. You only need to select one from the options, and enjoy wine, food and festive atmosphere. The evening’s program includes: a bottle of white, red or sparkling wine, creative cuisine from the Apartments brand-chef, sommelier’s  story about the wine and  basic rules of tasting.",
       "title": "Winery"
-    },
-    "ROOSTERS": {
-      "description": "During your stay at Vardzia Resort, you’ll find colorful rugs featuring rooster motifs almost everywhere.\n\nDating back to the 1930s–1950s, these rugs are part of Georgia’s textile heritage. Traditionally handmade by women in old Georgian households, each rug stands out through its unique combination of colors, ornaments, and intricate details.\n\nIn Georgian decorative art, the rooster represents courage and strength. Its vibrant colors and diverse designs are what make these rugs truly special.\n\nToday, more than 100 rooster rugs are displayed throughout Vardzia Resort.",
-      "title": "Roosters"
     }
   }
 }

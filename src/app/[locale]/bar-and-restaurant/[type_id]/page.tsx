@@ -13,13 +13,8 @@ const Menus = async () => {
   return (
     <>
       <FileLink
-        title={t("common.menu_geo")}
-        file="menu-geo.pdf"
-        Icon={IconMenu}
-      />
-      <FileLink
-        title={t("common.menu_eng")}
-        file="menu-eng.pdf"
+        title={t("common.menu")}
+        file="menu.pdf"
         Icon={IconMenu}
       />
 
